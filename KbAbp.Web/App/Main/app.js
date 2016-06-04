@@ -23,6 +23,16 @@
                     templateUrl: '/App/Main/views/home/home.cshtml',
                     menu: 'Home' //Matches to name of 'Home' menu in KbAbpNavigationProvider
                 })
+                .state('tasklist', {
+                    url: '/tasklist',
+                    templateUrl: '/App/Main/views/task/list.cshtml',
+                    menu: 'TaskList' //Matches to name of 'TaskList' menu in KbAbpNavigationProvider
+                })
+                .state('newtask', {
+                    url: '/newtask',
+                    templateUrl: '/App/Main/views/task/new.cshtml',
+                    menu: 'NewTask' //Matches to name of 'NewTask' menu in KbAbpNavigationProvider
+                })
                 .state('about', {
                     url: '/about',
                     templateUrl: '/App/Main/views/about/about.cshtml',

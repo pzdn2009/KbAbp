@@ -8,16 +8,20 @@ using System.Threading.Tasks;
 
 namespace KbAbp.Tasks.Dtos
 {
+    /// <summary>
+    /// 创建任务 Dto
+    /// </summary>
     public class CreateTaskInput : IInputDto
     {
-        public int? AssignedPersonId { get; set; }
-
+        /// <summary>
+        /// 任务描述(Required)
+        /// </summary>
         [Required]
         public string Description { get; set; }
 
         public override string ToString()
         {
-            return string.Format("[CreateTaskInput > AssignedPersonId = {0}, Description = {1}]", AssignedPersonId, Description);
+            return string.Format("[CreateTaskInput > Description = {0}]", Description);
         }
     }
 }

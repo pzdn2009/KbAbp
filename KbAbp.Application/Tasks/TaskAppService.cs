@@ -21,18 +21,37 @@ namespace KbAbp.Tasks
         public Dtos.GetTasksOutput GetTasks(Dtos.GetTasksInput input)
         {
             //Called specific GetAllWithPeople method of task repository.
-            var tasks = _taskRepository.GetAll().Where(zw => zw.State == input.State);
+            if (input != null && input.State.HasValue)
+            {
 
+            }
+            input = new GetTasksInput() { State = TaskState.Active };
+            var tasks = _taskRepository.GetAll().ToList();
+            var task = tasks.FirstOrDefault();
             //Used AutoMapper to automatically convert List<Task> to List<TaskDto>.
             return new GetTasksOutput
             {
-                Tasks = Mapper.Map<List<TaskDto>>(tasks)
+                Tasks = new List<TaskDto>() {
+                    new TaskDto() { Id = task.Id, CreationTime = task.CreationTime, Description =task.Description,
+                     State = (byte)task.State }
+                }
             };
         }
 
         public void UpdateTask(Dtos.UpdateTaskInput input)
         {
-            throw new NotImplementedException();
+            //We can use Logger, it's defined in ApplicationService base class.
+            Logger.Info("Updating a task for input: " + input);
+
+            //Retrieving a task entity with given id using standard Get method of repositories.
+            var task = _taskRepository.Get(input.TaskId);
+
+            //Updating changed properties of the retrieved task entity.
+
+            if (input.State.HasValue)
+            {
+                task.State = input.State.Value;
+            }
         }
 
         public void CreateTask(Dtos.CreateTaskInput input)

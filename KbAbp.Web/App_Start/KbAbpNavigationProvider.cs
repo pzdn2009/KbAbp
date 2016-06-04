@@ -15,19 +15,16 @@ namespace KbAbp.Web
         {
             context.Manager.MainMenu
                 .AddItem(
+                    new MenuItemDefinition("Home", new LocalizableString("HomePage", KbAbpConsts.LocalizationSourceName), url: "#/", icon: "fa fa-home")
+                )
+                .AddItem(
                     new MenuItemDefinition(
-                        "Home",
-                        new LocalizableString("HomePage", KbAbpConsts.LocalizationSourceName),
-                        url: "#/",
-                        icon: "fa fa-home"
-                        )
-                ).AddItem(
-                    new MenuItemDefinition(
-                        "About",
-                        new LocalizableString("About", KbAbpConsts.LocalizationSourceName),
-                        url: "#/about",
-                        icon: "fa fa-info"
-                        )
+                        "TaskManagement", new LocalizableString("TaskManagement", KbAbpConsts.LocalizationSourceName), icon: "fa fa-info")
+                        .AddItem(new MenuItemDefinition("TaskList", new LocalizableString("TaskList", KbAbpConsts.LocalizationSourceName), url: "#/tasklist", icon: "fa fa-info"))
+                        .AddItem(new MenuItemDefinition("NewTask", new LocalizableString("NewTask", KbAbpConsts.LocalizationSourceName), url: "#/newtask", icon: "fa fa-info"))
+                )
+                .AddItem(
+                    new MenuItemDefinition("About", new LocalizableString("About", KbAbpConsts.LocalizationSourceName), url: "#/about", icon: "fa fa-info")
                 );
         }
     }
