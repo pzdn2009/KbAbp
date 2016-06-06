@@ -1,5 +1,6 @@
 ﻿using Abp.Domain.Entities;
 using Abp.Domain.Entities.Auditing;
+using KbAbp.Projects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,5 +29,17 @@ namespace KbAbp.Tasks
         /// Current state of the task.
         /// </summary>
         public virtual TaskState State { get; set; }
+
+        /// <summary>
+        /// 备注
+        /// </summary>
+        public string Remark { get; set; }
+
+        public long? ProjectID { get; set; }
+
+        /// <summary>
+        /// 所属项目
+        /// </summary>
+        public Project Project { get; set; }
     }
 }

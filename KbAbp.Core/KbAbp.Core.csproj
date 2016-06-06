@@ -81,6 +81,8 @@
   <ItemGroup>
     <Compile Include="KbAbpConsts.cs" />
     <Compile Include="KbAbpCoreModule.cs" />
+    <Compile Include="Projects\IProjectRepository.cs" />
+    <Compile Include="Projects\Project.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tasks\ITaskRepository.cs" />
     <Compile Include="Tasks\Task.cs" />

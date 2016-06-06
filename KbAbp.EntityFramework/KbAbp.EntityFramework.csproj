@@ -97,10 +97,15 @@
   <ItemGroup>
     <Compile Include="EntityFramework\KbAbpDbContext.cs" />
     <Compile Include="EntityFramework\Repositories\KbAbpRepositoryBase.cs" />
+    <Compile Include="EntityFramework\Repositories\ProjectRepository.cs" />
     <Compile Include="EntityFramework\Repositories\TaskRepository.cs" />
     <Compile Include="Migrations\201606040218389_InitialTask.cs" />
     <Compile Include="Migrations\201606040218389_InitialTask.Designer.cs">
       <DependentUpon>201606040218389_InitialTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201606060243550_AddProject.cs" />
+    <Compile Include="Migrations\201606060243550_AddProject.Designer.cs">
+      <DependentUpon>201606060243550_AddProject.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="KbAbpDataModule.cs" />
@@ -119,6 +124,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201606040218389_InitialTask.resx">
       <DependentUpon>201606040218389_InitialTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606060243550_AddProject.resx">
+      <DependentUpon>201606060243550_AddProject.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
