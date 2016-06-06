@@ -14,6 +14,11 @@ namespace KbAbp.Tasks.Dtos
     public class CreateTaskInput : IInputDto
     {
         /// <summary>
+        /// 项目ID
+        /// </summary>
+        public long? ProjectID { get; set; }
+
+        /// <summary>
         /// 任务描述(Required)
         /// </summary>
         [Required]

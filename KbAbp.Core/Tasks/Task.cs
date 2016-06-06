@@ -40,6 +40,6 @@ namespace KbAbp.Tasks
         /// <summary>
         /// 所属项目
         /// </summary>
-        public Project Project { get; set; }
+        public virtual Project Project { get; set; }
     }
 }

@@ -42,6 +42,8 @@
                 }).success(function() {
                     task.state = newState;
                     abp.notify.info(vm.localize('TaskUpdatedMessage'));
+
+                    vm.refreshTasks();
                 });
             };
 

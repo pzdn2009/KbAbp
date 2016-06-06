@@ -22,18 +22,23 @@ namespace KbAbp.Tasks
         {
             var tasks = _taskRepository.GetAll();
 
-            //Called specific GetAllWithPeople method of task repository.
             if (input != null && input.State.HasValue)
             {
                 tasks = tasks.Where(zw => zw.State == input.State);
             }
 
-            //Used AutoMapper to automatically convert List<Task> to List<TaskDto>.
-            Mapper.CreateMap<Task, TaskDto>();
-            return new GetTasksOutput()
+            tasks = tasks.OrderBy(zw => zw.State).ThenBy(zw => zw.ProjectID)
+                .ThenByDescending(zw => zw.CreationTime);
+
+            Mapper.CreateMap<Task, TaskDto>().ForMember(dest => dest.ProjectName, option => option.MapFrom(
+                 src => src.Project != null ? src.Project.Name : string.Empty));
+
+            var ret= new GetTasksOutput()
             {
                 Tasks = Mapper.Map<List<TaskDto>>(tasks)
             };
+
+            return ret;
         }
 
         public void UpdateTask(Dtos.UpdateTaskInput input)
@@ -54,18 +59,10 @@ namespace KbAbp.Tasks
 
         public void CreateTask(Dtos.CreateTaskInput input)
         {
-            //We can use Logger, it's defined in ApplicationService class.
             Logger.Info("Creating a task for input: " + input);
 
-            //Creating a new Task entity with given input's properties
-            var task = new Task { Description = input.Description };
+            var task = new Task { Description = input.Description, ProjectID = input.ProjectID };
 
-            //if (input.AssignedPersonId.HasValue)
-            //{
-            //    task.AssignedPerson = _personRepository.Load(input.AssignedPersonId.Value);
-            //}
-
-            //Saving entity with standard Insert method of repositories.
             _taskRepository.Insert(task);
         }
     }
