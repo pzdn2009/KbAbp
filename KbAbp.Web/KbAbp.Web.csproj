@@ -211,6 +211,8 @@
     <Content Include="App\Main\views\layout\layout.js" />
     <Content Include="App\Main\views\home\home.js" />
     <Content Include="App\Main\views\about\about.js" />
+    <Content Include="App\Main\views\project\list.js" />
+    <Content Include="App\Main\views\project\new.js" />
     <Content Include="App\Main\views\task\list.js" />
     <Content Include="App\Main\views\task\new.cshtml" />
     <Content Include="App\Main\views\task\new.js" />
@@ -340,6 +342,8 @@
     <Content Include="Content\bootstrap.min.css.map" />
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="App\Main\views\task\list.cshtml" />
+    <Content Include="App\Main\views\project\list.cshtml" />
+    <Content Include="App\Main\views\project\new.cshtml" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-dj.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-er.js" />

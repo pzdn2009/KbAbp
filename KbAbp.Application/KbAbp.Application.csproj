@@ -89,6 +89,7 @@
   <ItemGroup>
     <Compile Include="KbAbpApplicationModule.cs" />
     <Compile Include="KbAbpAppServiceBase.cs" />
+    <Compile Include="Projects\Dtos\CreateProjectInput.cs" />
     <Compile Include="Projects\Dtos\GetProjectInput.cs" />
     <Compile Include="Projects\Dtos\GetProjectOutput.cs" />
     <Compile Include="Projects\Dtos\ProjectDto.cs" />

@@ -12,5 +12,7 @@ namespace KbAbp.Projects
     public interface IProjectAppService
     {
         GetProjectOutput GetProjects(GetProjectInput input);
+
+        void CreateProject(CreateProjectInput input);
     }
 }

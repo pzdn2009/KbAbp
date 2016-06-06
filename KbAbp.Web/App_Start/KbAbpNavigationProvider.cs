@@ -24,6 +24,12 @@ namespace KbAbp.Web
                         .AddItem(new MenuItemDefinition("NewTask", new LocalizableString("NewTask", KbAbpConsts.LocalizationSourceName), url: "#/newtask", icon: "fa fa-info"))
                 )
                 .AddItem(
+                    new MenuItemDefinition(
+                        "ProjectManagement", new LocalizableString("ProjectManagement", KbAbpConsts.LocalizationSourceName), icon: "fa fa-info")
+                        .AddItem(new MenuItemDefinition("ProjectList", new LocalizableString("ProjectList", KbAbpConsts.LocalizationSourceName), url: "#/projectlist", icon: "fa fa-info"))
+                        .AddItem(new MenuItemDefinition("NewProject", new LocalizableString("NewProject", KbAbpConsts.LocalizationSourceName), url: "#/newproject", icon: "fa fa-info"))
+                )
+                .AddItem(
                     new MenuItemDefinition("About", new LocalizableString("About", KbAbpConsts.LocalizationSourceName), url: "#/about", icon: "fa fa-info")
                 );
         }

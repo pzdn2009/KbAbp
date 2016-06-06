@@ -19,6 +19,16 @@ namespace KbAbp.Projects
             _projectRepository = projectRepository;
         }
 
+        public void CreateProject(CreateProjectInput input)
+        {
+            _projectRepository.Insert(new Project()
+            {
+                Name = input.Name,
+                Description = input.Description,
+                CreationTime = DateTime.Now
+            });
+        }
+
         public GetProjectOutput GetProjects(GetProjectInput input)
         {
             var projects = _projectRepository.GetAll();
