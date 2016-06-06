@@ -20,21 +20,19 @@ namespace KbAbp.Tasks
 
         public Dtos.GetTasksOutput GetTasks(Dtos.GetTasksInput input)
         {
+            var tasks = _taskRepository.GetAll();
+
             //Called specific GetAllWithPeople method of task repository.
             if (input != null && input.State.HasValue)
             {
-
+                tasks = tasks.Where(zw => zw.State == input.State);
             }
-            input = new GetTasksInput() { State = TaskState.Active };
-            var tasks = _taskRepository.GetAll().ToList();
-            var task = tasks.FirstOrDefault();
+
             //Used AutoMapper to automatically convert List<Task> to List<TaskDto>.
-            return new GetTasksOutput
+            Mapper.CreateMap<Task, TaskDto>();
+            return new GetTasksOutput()
             {
-                Tasks = new List<TaskDto>() {
-                    new TaskDto() { Id = task.Id, CreationTime = task.CreationTime, Description =task.Description,
-                     State = (byte)task.State }
-                }
+                Tasks = Mapper.Map<List<TaskDto>>(tasks)
             };
         }
 
