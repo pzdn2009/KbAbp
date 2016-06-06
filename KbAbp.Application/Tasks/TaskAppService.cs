@@ -27,13 +27,18 @@ namespace KbAbp.Tasks
                 tasks = tasks.Where(zw => zw.State == input.State);
             }
 
+            if (input.Id.HasValue)
+            {
+                tasks = tasks.Where(zw => zw.Id == input.Id.Value);
+            }
+
             tasks = tasks.OrderBy(zw => zw.State).ThenBy(zw => zw.ProjectID)
                 .ThenByDescending(zw => zw.CreationTime);
 
             Mapper.CreateMap<Task, TaskDto>().ForMember(dest => dest.ProjectName, option => option.MapFrom(
                  src => src.Project != null ? src.Project.Name : string.Empty));
 
-            var ret= new GetTasksOutput()
+            var ret = new GetTasksOutput()
             {
                 Tasks = Mapper.Map<List<TaskDto>>(tasks)
             };
@@ -55,6 +60,9 @@ namespace KbAbp.Tasks
             {
                 task.State = input.State.Value;
             }
+
+            task.Remark = input.Remark;
+            task.ProjectID = input.ProjectID;
         }
 
         public void CreateTask(Dtos.CreateTaskInput input)

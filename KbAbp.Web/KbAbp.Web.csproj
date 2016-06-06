@@ -200,6 +200,7 @@
     <Content Include="Abp\Framework\styles\abp.mixings.min.css" />
     <Content Include="Abp\Framework\styles\utils\ie10fix.css" />
     <Content Include="App\Main\app.js" />
+    <Content Include="App\Main\filter\moment_filters.js" />
     <Content Include="App\Main\images\abp-logo.png" />
     <Content Include="App\Main\main.css">
       <DependentUpon>main.less</DependentUpon>
@@ -213,6 +214,7 @@
     <Content Include="App\Main\views\about\about.js" />
     <Content Include="App\Main\views\project\list.js" />
     <Content Include="App\Main\views\project\new.js" />
+    <Content Include="App\Main\views\task\edit.js" />
     <Content Include="App\Main\views\task\list.js" />
     <Content Include="App\Main\views\task\new.cshtml" />
     <Content Include="App\Main\views\task\new.js" />
@@ -344,6 +346,7 @@
     <Content Include="App\Main\views\task\list.cshtml" />
     <Content Include="App\Main\views\project\list.cshtml" />
     <Content Include="App\Main\views\project\new.cshtml" />
+    <Content Include="App\Main\views\task\edit.cshtml" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-dj.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-er.js" />
@@ -1135,7 +1138,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
-    <Content Include="packages.config" />
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Scripts\sweetalert\sweet-alert.scss" />

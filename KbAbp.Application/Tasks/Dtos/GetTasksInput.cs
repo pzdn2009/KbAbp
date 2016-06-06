@@ -9,6 +9,7 @@ namespace KbAbp.Tasks.Dtos
 {
     public class GetTasksInput : IInputDto
     {
+        public long? Id { get; set; }
         public TaskState? State { get; set; }
     }
 }

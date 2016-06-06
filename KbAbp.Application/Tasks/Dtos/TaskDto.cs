@@ -14,6 +14,10 @@ namespace KbAbp.Tasks.Dtos
     public class TaskDto : EntityDto<long>
     {
         /// <summary>
+        /// 项目ID
+        /// </summary>
+        public long ? ProjectID { get; set; }
+        /// <summary>
         /// 项目
         /// </summary>
         public string ProjectName { get; set; }
@@ -22,6 +26,11 @@ namespace KbAbp.Tasks.Dtos
         /// 描述
         /// </summary>
         public string Description { get; set; }
+
+        /// <summary>
+        /// 备注
+        /// </summary>
+        public string Remark { get; set; }
 
         /// <summary>
         /// 创建时间

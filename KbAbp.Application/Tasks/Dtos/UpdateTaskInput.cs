@@ -17,6 +17,10 @@ namespace KbAbp.Tasks.Dtos
         [Range(1, long.MaxValue)] //Data annotation attributes work as expected.
         public long TaskId { get; set; }
 
+        public long? ProjectID { get; set; }
+
+        public string Remark { get; set; }
+
         public TaskState? State { get; set; }
 
         public void AddValidationErrors(List<ValidationResult> results)

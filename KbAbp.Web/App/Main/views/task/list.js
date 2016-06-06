@@ -8,7 +8,6 @@
             var vm = this;
 
             vm.localize = abp.localization.getSource('KbAbp');
-            console.log(vm.localize);
             vm.tasks = [];
 
             $scope.selectedTaskState = 0;
