@@ -5,6 +5,7 @@ using Abp.WebApi;
 using Abp.WebApi.Controllers.Dynamic.Builders;
 using KbAbp.Tasks;
 using KbAbp.Projects;
+using KbAbp.Kbs;
 
 namespace KbAbp
 {
@@ -19,6 +20,8 @@ namespace KbAbp
 
             DynamicApiControllerBuilder.For<ITaskAppService>("app/task").Build();
             DynamicApiControllerBuilder.For<IProjectAppService>("app/project").Build();
+            DynamicApiControllerBuilder.For<IKBCategoryAppService>("app/kbcategory").Build();
+            DynamicApiControllerBuilder.For<IKBCategoryItemAppService>("app/kbcategoryitem").Build();
         }
     }
 }
