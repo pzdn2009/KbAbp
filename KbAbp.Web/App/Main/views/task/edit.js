@@ -46,7 +46,7 @@
                         { taskid: vm.task.id, projectID: vm.task.projectID, remark: vm.task.remark, state: vm.task.state }
                     ).success(function () {
                         abp.notify.info(abp.utils.formatString(localize("TaskUpdateMessage"), vm.task.description + vm.task.remark));
-                        $location.path('/');
+                        $location.path('/tasklist');
                     })
                 );
             };

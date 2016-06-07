@@ -36,7 +36,7 @@
                         vm.task
                     ).success(function () {
                         abp.notify.info(abp.utils.formatString(localize("TaskCreatedMessage"), vm.task.description));
-                        $location.path('/');
+                        $location.path('/tasklist');
                     })
                 );
             };
