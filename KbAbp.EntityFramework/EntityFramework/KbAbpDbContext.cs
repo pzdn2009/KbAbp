@@ -8,7 +8,10 @@ namespace KbAbp.EntityFramework
         //TODO: Define an IDbSet for each Entity...
 
         //Example:
-        public virtual IDbSet<Tasks.Task> Users { get; set; }
+        public virtual IDbSet<Tasks.Task> Tasks { get; set; }
+        public virtual IDbSet<Projects.Project> Projects { get; set; }
+        public virtual IDbSet<Kbs.KBCategory> KBCategorys { get; set; }
+        public virtual IDbSet<Kbs.KBCategoryItem> KBCategoryItems { get; set; }
 
         /* NOTE: 
          *   Setting "Default" to base class helps us when working migration commands on Package Manager Console.

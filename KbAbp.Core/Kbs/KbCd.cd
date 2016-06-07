@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="KbAbp.Kbs.KBCategory">
+    <Position X="1.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAgAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Kbs\KBCategory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KbAbp.Kbs.KBCategoryItem">
+    <Position X="3.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAQAACAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Kbs\KBCategoryItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KbAbp.Kbs.KBQueue">
+    <Position X="6.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Kbs\KBQueue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KbAbp.Kbs.Knowledge">
+    <Position X="8" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Kbs\Knowledge.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KbAbp.Kbs.KnowledgeCategory">
+    <Position X="6.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Kbs\KnowledgeCategory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="微软雅黑" Size="9" />
+</ClassDiagram>

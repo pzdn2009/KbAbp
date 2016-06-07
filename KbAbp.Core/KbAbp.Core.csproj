@@ -81,6 +81,13 @@
   <ItemGroup>
     <Compile Include="KbAbpConsts.cs" />
     <Compile Include="KbAbpCoreModule.cs" />
+    <Compile Include="Kbs\IKBCategoryItemRepository.cs" />
+    <Compile Include="Kbs\IKBCategoryRepository.cs" />
+    <Compile Include="Kbs\KBCategory.cs" />
+    <Compile Include="Kbs\KBCategoryItem.cs" />
+    <Compile Include="Kbs\KBQueue.cs" />
+    <Compile Include="Kbs\Knowledge.cs" />
+    <Compile Include="Kbs\KnowledgeCategory.cs" />
     <Compile Include="Projects\IProjectRepository.cs" />
     <Compile Include="Projects\Project.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -90,6 +97,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="Kbs\KbCd.cd" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
