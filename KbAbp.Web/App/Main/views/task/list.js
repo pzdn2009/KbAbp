@@ -50,9 +50,7 @@
                 return abp.utils.formatString(vm.localize('Xtasks'), vm.tasks.length);
             };
 
-            if (vm.tasks.length == 0) {
-                vm.refreshTasks();
-            }
+            $scope.selectedTaskState = 1;
         }
     ]);
 })();
