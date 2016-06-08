@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace KbAbp.EntityFramework.Repositories
 {
-    public class KBCategoryRepository : KbAbpRepositoryBase<KBCategory, long>, IKBCategoryRepository
+    public class KbCategoryRepository : KbAbpRepositoryBase<KbCategory, long>, IKbCategoryRepository
     {
-        public KBCategoryRepository(IDbContextProvider<KbAbpDbContext> dbContextProvider)
+        public KbCategoryRepository(IDbContextProvider<KbAbpDbContext> dbContextProvider)
             : base(dbContextProvider)
         {
         }

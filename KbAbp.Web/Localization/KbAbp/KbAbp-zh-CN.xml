@@ -3,8 +3,8 @@
   <texts>
     <text name="HomePage" value="主页" />
     <text name="About" value="关于我们" />
-    <text name="WellcomeMessage" value="欢迎使用 KbAbp!" />
-    <text name="Home_ThisIsATemplate" value="KbAbp项目模板是Web应用开发的起点,它采用..." />
+    <text name="WellcomeMessage" value="让知识构建激情生活" />
+    <text name="Home_ThisIsATemplate" value="自举" />
     <text name="Home_AspNetDescription" value="ASP.NET MVC提供了强大的、基于模式的途径，来搭建动态Web应用。它使您做到清晰的关注点分离，享受完全可控的、有趣的、敏捷的开发." />
     <text name="Home_AspNetBoilerplateDescription" value="ASP.NET Boilerplate是一个Web开发框架，它吸纳和提供了Web开发的一些最佳实践，以及流行的框架工具集." />
     <text name="Others" value="其它" />
@@ -18,5 +18,11 @@
     <text name="AllTasks" value="所有任务" />
     <text name="ActiveTasks" value="未完成" />
     <text name="CompletedTasks" value="已完成" />
+    <text name="NewTask" value="新增" />
+    <text name="KBManagement" value="KB管理" />
+    <text name="NewKbCategory" value="新增KB类别" />
+    <text name="KbCategoryName" value="Kb类别名称" />
+    <text name="Create" value="创建" />
+    <text name="EnterHere" value="Enter here!" />
   </texts>
 </localizationDictionary>

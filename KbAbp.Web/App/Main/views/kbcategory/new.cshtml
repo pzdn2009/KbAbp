@@ -1,0 +1,12 @@
+﻿<div ng-controller="app.views.kbcategory.new as vm">
+    <form id="NewKbCategory" role="form" name="newKbCategoryForm" novalidate>
+
+        <div class="form-group">
+            <label for="KBCategoryName">@L("KbCategoryName")</label>
+            <input id="KBCategoryName" ng-model="vm.kbcategory.name" class="form-control" rows="3" placeholder="@L("EnterHere")" required />
+        </div>
+
+        <button ng-click="vm.saveKbCategory()" ng-disabled="newKbCategoryForm.$invalid" type="submit" class="btn btn-primary">@L("Create")</button>
+
+    </form>
+</div>

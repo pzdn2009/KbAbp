@@ -3,11 +3,13 @@ using Abp.Domain.Entities.Auditing;
 using KbAbp.Projects;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 
 namespace KbAbp.Tasks
 {
+    [Table("Tasks")]
     public class Task : Entity<long>, IHasCreationTime
     {
         public Task()

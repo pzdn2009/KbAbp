@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace KbAbp.Kbs
 {
-    public interface IKBCategoryItemAppService
+    public interface IKbCategoryItemAppService
     {
 
     }

@@ -89,10 +89,14 @@
   <ItemGroup>
     <Compile Include="KbAbpApplicationModule.cs" />
     <Compile Include="KbAbpAppServiceBase.cs" />
-    <Compile Include="Kbs\IKBCategoryAppService.cs" />
-    <Compile Include="Kbs\IKBCategoryItemAppService.cs" />
-    <Compile Include="Kbs\KBCategoryAppService.cs" />
-    <Compile Include="Kbs\KBCategoryItemAppService.cs" />
+    <Compile Include="Kbs\Dtos\CreateKbCategoryInput.cs" />
+    <Compile Include="Kbs\Dtos\KbCategoryDto.cs" />
+    <Compile Include="Kbs\Dtos\GetKbCategoryInput.cs" />
+    <Compile Include="Kbs\Dtos\GetKbCategoryOutput.cs" />
+    <Compile Include="Kbs\IKbCategoryAppService.cs" />
+    <Compile Include="Kbs\IKbCategoryItemAppService.cs" />
+    <Compile Include="Kbs\KbCategoryAppService.cs" />
+    <Compile Include="Kbs\KbCategoryItemAppService.cs" />
     <Compile Include="Projects\Dtos\CreateProjectInput.cs" />
     <Compile Include="Projects\Dtos\GetProjectInput.cs" />
     <Compile Include="Projects\Dtos\GetProjectOutput.cs" />
@@ -118,9 +122,7 @@
       <Name>KbAbp.Core</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Kbs\Dtos\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

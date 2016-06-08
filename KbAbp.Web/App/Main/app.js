@@ -48,6 +48,11 @@
                     templateUrl: '/App/Main/views/task/edit.cshtml',
                     menu: 'EditTask' //Matches to name of 'NewTask' menu in KbAbpNavigationProvider
                 })
+                .state('newkbcategory', {
+                    url: '/newkbcategory',
+                    templateUrl: '/App/Main/views/kbcategory/new.cshtml',
+                    menu: 'NewKbCategory' //Matches to name of 'NewKBCategory' menu in KbAbpNavigationProvider
+                })
                 .state('about', {
                     url: '/about',
                     templateUrl: '/App/Main/views/about/about.cshtml',

@@ -347,6 +347,8 @@
     <Content Include="App\Main\views\project\list.cshtml" />
     <Content Include="App\Main\views\project\new.cshtml" />
     <Content Include="App\Main\views\task\edit.cshtml" />
+    <Content Include="App\Main\views\kbcategory\new.cshtml" />
+    <Content Include="App\Main\views\kbcategory\new.js" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-dj.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-er.js" />

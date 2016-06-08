@@ -81,10 +81,10 @@
   <ItemGroup>
     <Compile Include="KbAbpConsts.cs" />
     <Compile Include="KbAbpCoreModule.cs" />
-    <Compile Include="Kbs\IKBCategoryItemRepository.cs" />
-    <Compile Include="Kbs\IKBCategoryRepository.cs" />
-    <Compile Include="Kbs\KBCategory.cs" />
-    <Compile Include="Kbs\KBCategoryItem.cs" />
+    <Compile Include="Kbs\IKbCategoryItemRepository.cs" />
+    <Compile Include="Kbs\IKbCategoryRepository.cs" />
+    <Compile Include="Kbs\KbCategory.cs" />
+    <Compile Include="Kbs\KbCategoryItem.cs" />
     <Compile Include="Kbs\KBQueue.cs" />
     <Compile Include="Kbs\Knowledge.cs" />
     <Compile Include="Kbs\KnowledgeCategory.cs" />

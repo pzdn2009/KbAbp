@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace KbAbp.Kbs
 {
-    public class KBCategoryItemAppService : ApplicationService, IKBCategoryItemAppService
+    public class KbCategoryItemAppService : ApplicationService, IKbCategoryItemAppService
     {
     }
 }

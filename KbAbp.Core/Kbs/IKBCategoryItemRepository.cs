@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace KbAbp.Kbs
 {
-    public interface IKBCategoryItemRepository : IRepository<KBCategoryItem, long>
+    public interface IKbCategoryItemRepository : IRepository<KbCategoryItem, long>
     {
 
     }

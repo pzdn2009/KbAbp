@@ -1,27 +1,62 @@
 ﻿<div ng-controller="app.views.home as vm">
-    <h1>@L("WellcomeMessage")</h1>
-    <p class="lead">@L("Home_ThisIsATemplate")</p>
-    <div class="row">
-        <div class="col-md-4">
-            <h3>ASP.NET MVC</h3>
-            <p>
-                @L("Home_AspNetDescription")
-            </p>
-            <a class="btn btn-primary btn-sm" href="http://asp.net/mvc">@L("LearnMore")..</a>
-        </div>
-        <div class="col-md-4">
-            <h3>ASP.NET Boilerplate</h3>
-            <p>
-                @L("Home_AspNetBoilerplateDescription")
-            </p>
-            <a class="btn btn-primary btn-sm" href="http://aspnetboilerplate.com">@L("LearnMore")..</a>
-        </div>
-        <div class="col-md-4">
-            <h3>Angularjs</h3>
-            <p>
-                @L("Home_AngularDescription")
-            </p>
-            <a class="btn btn-primary btn-sm" href="http://angularjs.org/">@L("LearnMore")..</a>
+    <h1 class="text-center">
+        @L("WellcomeMessage")
+    </h1>
+    @*<p class="lead">@L("Home_ThisIsATemplate")</p>*@
+
+    <div class="form-inline">
+        <label class="col-lg-8 text-right" for="comKbType">KB类型:</label>
+        <select ng-model="kbtype" class="form-control text-right col-lg-4" ng-options="m.id as m.name for m in vm.kbCategories"></select>
+    </div>
+
+    <div style="clear:both;">
+    </div>
+
+    <div class="container mycontainer" style="text-align: center; margin-top: 20px;">
+        <div class="row">
+            <div class="col-md-3 myblock">
+                @Html.ActionLink("html", "KnowledgeList", "Knowledge", new { type = "html" }, null)
+            </div>
+
+            <div class="col-md-3 myblock">
+                @Html.ActionLink("html", "KnowledgeList", "Knowledge", new { type = "css" }, null)
+            </div>
+
+            <div class="col-md-3 myblock">
+                @Html.ActionLink("html", "KnowledgeList", "Knowledge", new { type = "js" }, null)
+            </div>
         </div>
     </div>
 </div>
+
+<style type="text/css">
+    .myblock {
+        max-width: 300px;
+        height: 150px;
+        font-size: 28px;
+        text-align: center;
+        background-color: lightblue;
+        line-height: 150px;
+        margin: 4px;
+        -moz-border-radius: 12px; /* Gecko browsers */
+        -webkit-border-radius: 12px; /* Webkit browsers */
+        border-radius: 12px; /* W3C syntax */
+        text-shadow: black 0 0 1px;
+        cursor: pointer;
+    }
+
+        .myblock a:hover {
+            text-decoration: none;
+        }
+</style>
+
+<script type="text/javascript">
+    $("div .myblock").hover(function () {
+        $(this).css("backgroundColor", "skyblue");
+    }, function () {
+        $(this).css("backgroundColor", "");
+    }).click(function () {
+        var a = $(this).find("a").get(0);
+        window.location = a;
+    });
+</script>

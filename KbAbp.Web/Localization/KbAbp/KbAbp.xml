@@ -14,5 +14,10 @@
     <text name="ForMoreInformation" value="For more information" />
     <text name="Task" value="Task" />
     <text name="TaskUpdatedMessage" value="任务已被更新"/>
+    <text name="NewTask" value="New Task" />
+    <text name="KBManagement" value="KB Management" />
+    <text name="NewKbCategory" value="New KBCategory" />
+    <text name="Create" value="Create" />
+    <text name="EnterHere" value="Enter here!" />
   </texts>
 </localizationDictionary>

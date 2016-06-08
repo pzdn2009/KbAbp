@@ -97,8 +97,8 @@
   <ItemGroup>
     <Compile Include="EntityFramework\KbAbpDbContext.cs" />
     <Compile Include="EntityFramework\Repositories\KbAbpRepositoryBase.cs" />
-    <Compile Include="EntityFramework\Repositories\KBCategoryItemRepository.cs" />
-    <Compile Include="EntityFramework\Repositories\KBCategoryRepository.cs" />
+    <Compile Include="EntityFramework\Repositories\KbCategoryItemRepository.cs" />
+    <Compile Include="EntityFramework\Repositories\KbCategoryRepository.cs" />
     <Compile Include="EntityFramework\Repositories\ProjectRepository.cs" />
     <Compile Include="EntityFramework\Repositories\TaskRepository.cs" />
     <Compile Include="Migrations\201606040218389_InitialTask.cs" />
@@ -112,6 +112,10 @@
     <Compile Include="Migrations\201606070450127_CreateKBCategory.cs" />
     <Compile Include="Migrations\201606070450127_CreateKBCategory.Designer.cs">
       <DependentUpon>201606070450127_CreateKBCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201606070945350_去除重复的名称.cs" />
+    <Compile Include="Migrations\201606070945350_去除重复的名称.Designer.cs">
+      <DependentUpon>201606070945350_去除重复的名称.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="KbAbpDataModule.cs" />
@@ -136,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201606070450127_CreateKBCategory.resx">
       <DependentUpon>201606070450127_CreateKBCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606070945350_去除重复的名称.resx">
+      <DependentUpon>201606070945350_去除重复的名称.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

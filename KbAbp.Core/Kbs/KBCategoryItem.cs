@@ -11,7 +11,7 @@ namespace KbAbp.Kbs
     /// <summary>
     /// 知识项
     /// </summary>
-    public class KBCategoryItem : Entity<long>
+    public class KbCategoryItem : Entity<long>
     {
         [Required]
         [MaxLength(100)]
@@ -35,6 +35,6 @@ namespace KbAbp.Kbs
         /// <summary>
         /// 外键对象
         /// </summary>
-        public KBCategory KBCategory { get; set; }
+        public KbCategory KBCategory { get; set; }
     }
 }

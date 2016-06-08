@@ -19,15 +19,20 @@ namespace KbAbp.Web
                 )
                 .AddItem(
                     new MenuItemDefinition(
-                        "TaskManagement", new LocalizableString("TaskManagement", KbAbpConsts.LocalizationSourceName), icon: "fa fa-info")
-                        .AddItem(new MenuItemDefinition("TaskList", new LocalizableString("TaskList", KbAbpConsts.LocalizationSourceName), url: "#/tasklist", icon: "fa fa-info"))
-                        .AddItem(new MenuItemDefinition("NewTask", new LocalizableString("NewTask", KbAbpConsts.LocalizationSourceName), url: "#/newtask", icon: "fa fa-info"))
+                        "TaskManagement", new LocalizableString("TaskManagement", KbAbpConsts.LocalizationSourceName), icon: "fa fa-tasks")
+                        .AddItem(new MenuItemDefinition("TaskList", new LocalizableString("TaskList", KbAbpConsts.LocalizationSourceName), url: "#/tasklist", icon: "fa fa-list"))
+                        .AddItem(new MenuItemDefinition("NewTask", new LocalizableString("NewTask", KbAbpConsts.LocalizationSourceName), url: "#/newtask", icon: "fa fa-plus"))
                 )
                 .AddItem(
                     new MenuItemDefinition(
                         "ProjectManagement", new LocalizableString("ProjectManagement", KbAbpConsts.LocalizationSourceName), icon: "fa fa-info")
-                        .AddItem(new MenuItemDefinition("ProjectList", new LocalizableString("ProjectList", KbAbpConsts.LocalizationSourceName), url: "#/projectlist", icon: "fa fa-info"))
-                        .AddItem(new MenuItemDefinition("NewProject", new LocalizableString("NewProject", KbAbpConsts.LocalizationSourceName), url: "#/newproject", icon: "fa fa-info"))
+                        .AddItem(new MenuItemDefinition("ProjectList", new LocalizableString("ProjectList", KbAbpConsts.LocalizationSourceName), url: "#/projectlist", icon: "fa fa-list"))
+                        .AddItem(new MenuItemDefinition("NewProject", new LocalizableString("NewProject", KbAbpConsts.LocalizationSourceName), url: "#/newproject", icon: "fa fa-plus"))
+                )
+                .AddItem(
+                    new MenuItemDefinition(
+                        "KBManagement", new LocalizableString("KBManagement", KbAbpConsts.LocalizationSourceName), icon: "fa fa-info")
+                        .AddItem(new MenuItemDefinition("NewKbCategory", new LocalizableString("NewKbCategory", KbAbpConsts.LocalizationSourceName), url: "#/newkbcategory", icon: "fa fa-plus"))
                 )
                 .AddItem(
                     new MenuItemDefinition("About", new LocalizableString("About", KbAbpConsts.LocalizationSourceName), url: "#/about", icon: "fa fa-info")

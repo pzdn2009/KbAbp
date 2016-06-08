@@ -11,7 +11,7 @@ namespace KbAbp.Kbs
     /// <summary>
     /// 知识库类别
     /// </summary>
-    public class KBCategory : Entity<long>
+    public class KbCategory : Entity<long>
     {
         [MaxLength(50)]
         [Required]
@@ -29,6 +29,6 @@ namespace KbAbp.Kbs
         /// <summary>
         /// 子项
         /// </summary>
-        public virtual IEnumerable<KBCategoryItem> KBCategoryItems { get; set; }
+        public virtual IEnumerable<KbCategoryItem> KBCategoryItems { get; set; }
     }
 }

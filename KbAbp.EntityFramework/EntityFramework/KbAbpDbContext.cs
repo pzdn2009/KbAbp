@@ -1,5 +1,6 @@
 ﻿using Abp.EntityFramework;
 using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
 
 namespace KbAbp.EntityFramework
 {
@@ -10,8 +11,8 @@ namespace KbAbp.EntityFramework
         //Example:
         public virtual IDbSet<Tasks.Task> Tasks { get; set; }
         public virtual IDbSet<Projects.Project> Projects { get; set; }
-        public virtual IDbSet<Kbs.KBCategory> KBCategorys { get; set; }
-        public virtual IDbSet<Kbs.KBCategoryItem> KBCategoryItems { get; set; }
+        public virtual IDbSet<Kbs.KbCategory> KbCategorys { get; set; }
+        public virtual IDbSet<Kbs.KbCategoryItem> KbCategoryItems { get; set; }
 
         /* NOTE: 
          *   Setting "Default" to base class helps us when working migration commands on Package Manager Console.
@@ -32,6 +33,12 @@ namespace KbAbp.EntityFramework
             : base(nameOrConnectionString)
         {
 
+        }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+            base.OnModelCreating(modelBuilder);
         }
     }
 }
