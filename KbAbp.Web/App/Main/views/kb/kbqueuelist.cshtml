@@ -1,0 +1,42 @@
+﻿<div ng-controller="app.views.kbqueue.list as vm">
+    <div class="panel panel-default">
+        <div class="panel-heading" style="position: relative;">
+            <div class="row">
+
+                <!-- Title -->
+                <h3 class="panel-title col-xs-6">
+                    @L("List") - <span>{{vm.getKbQueueCountText()}}</span>
+                </h3>
+
+                <!-- Task state combobox -->
+                <div class="col-xs-6 text-right">
+                    <select ng-model="selectedTaskState">
+                        <option value="0">@L("All")</option>
+                        <option value="1">@L("Active")</option>
+                        <option value="2">@L("Completed")</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <table class="table table-striped table-responsive">
+            <tr>
+                <th style="width:30%"></th>
+                <th style="width:50%"></th>
+                <th style="width:10%"></th>
+                <th style="width:10%"></th>
+            </tr>
+            <tr ng-repeat="kbQueue in vm.kbQueues">
+                <td>{{kbQueue.title}}</td>
+                <td>{{kbQueue.url}}</td>
+                <td>
+                    <span ng-class="{'task-description-active': kbQueue.status == 1, 'task-description-completed': kbQueue.status == 2 }">
+                        {{kbQueue.status == 1 ? '@L("Active")' : '@L("Completed")'}}
+                    </span>
+                </td>
+                <td>{{kbQueue.creationTime | momentFromNow }}</td>
+            </tr>
+        </table>
+    </div>
+</div>
+

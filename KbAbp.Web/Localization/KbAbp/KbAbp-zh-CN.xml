@@ -21,14 +21,14 @@
     <text name="EnterHere" value="Enter here!" />
     <text name="Description" value="描述" />
     <text name="Remark" value ="备注" />
+    <text name="All" value="所有" />
+    <text name="Active" value="未完成" />
+    <text name="Completed" value="已完成" />
     
     <!--任务-->
     <text name="TaskManagement" value="任务管理" />
     <text name="TaskList" value="任务列表" />
     <text name="Xtasks" value="任务量{0}" />
-    <text name="AllTasks" value="所有任务" />
-    <text name="ActiveTasks" value="未完成" />
-    <text name="CompletedTasks" value="已完成" />
     <text name="TaskUpdatedMessage" value="任务：{0}已被更新"/>
     
     <!--Project-->
@@ -40,6 +40,8 @@
     <text name="KBManagement" value="KB管理" />
     <text name="NewKbCategory" value="新增KB类别" />
     <text name="KbCategoryName" value="类别名称" />
+    <text name="KbQueueList" value="我的队列" />
+    <text name="NewKbQueue" value="新增队列" />
     
   </texts>
 </localizationDictionary>

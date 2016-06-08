@@ -208,6 +208,8 @@
     <Content Include="App\Main\main.min.css">
       <DependentUpon>main.css</DependentUpon>
     </Content>
+    <Content Include="App\Main\views\kb\newkbqueue.js" />
+    <Content Include="App\Main\views\kb\kbqueuelist.js" />
     <Content Include="App\Main\views\layout\header.js" />
     <Content Include="App\Main\views\layout\layout.js" />
     <Content Include="App\Main\views\home\home.js" />
@@ -349,6 +351,8 @@
     <Content Include="App\Main\views\task\edit.cshtml" />
     <Content Include="App\Main\views\kb\newkbcategory.cshtml" />
     <Content Include="App\Main\views\kb\newkbcategory.js" />
+    <Content Include="App\Main\views\kb\kbqueuelist.cshtml" />
+    <Content Include="App\Main\views\kb\newkbqueue.cshtml" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-dj.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-er.js" />

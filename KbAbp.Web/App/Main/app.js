@@ -15,7 +15,7 @@
     //Configuration for Angular UI routing.
     app.config([
         '$stateProvider', '$urlRouterProvider',
-        function($stateProvider, $urlRouterProvider) {
+        function ($stateProvider, $urlRouterProvider) {
             $urlRouterProvider.otherwise('/');
             $stateProvider
                 .state('home', {
@@ -53,13 +53,23 @@
                     templateUrl: '/App/Main/views/kb/newkbcategory.cshtml',
                     menu: 'NewKbCategory' //Matches to name of 'NewKBCategory' menu in KbAbpNavigationProvider
                 })
+                .state('kbqueuelist', {
+                    url: '/kbqueuelist',
+                    templateUrl: '/App/Main/views/kb/kbqueuelist.cshtml',
+                    menu: 'KbQueueList' //Matches to name of 'NewKBCategory' menu in KbAbpNavigationProvider
+                })
+                .state('newkbqueue', {
+                    url: '/newkbqueue',
+                    templateUrl: '/App/Main/views/kb/newkbqueue.cshtml',
+                    menu: 'NewKbQueue'
+                })
                 .state('about', {
                     url: '/about',
                     templateUrl: '/App/Main/views/about/about.cshtml',
                     menu: 'About' //Matches to name of 'About' menu in KbAbpNavigationProvider
                 });
 
-          
+
         }
     ]);
 })();

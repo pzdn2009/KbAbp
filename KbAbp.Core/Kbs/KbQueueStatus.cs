@@ -8,8 +8,8 @@ namespace KbAbp.Kbs
 {
     public enum KbQueueStatus : byte
     {
-        Active,
+        Active = 1,
 
-        Done
+        Done = 2
     }
 }

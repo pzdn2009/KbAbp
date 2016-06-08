@@ -1,0 +1,17 @@
+﻿<div ng-controller="app.views.kbqueue.new as vm">
+    <form id="NewKbQueue" role="form" name="newKbQueueForm" novalidate>
+
+        <div class="form-group">
+            <label for="kbQueueTitle">@L("Title")</label>
+            <input id="kbQueueTitle" ng-model="vm.kbqueue.title" class="form-control" placeholder="@L("EnterHere")" required />
+        </div>
+
+        <div class="form-group">
+            <label for="kbQueueUrl">@L("Url")</label>
+            <input id="kbQueueUrl" ng-model="vm.kbqueue.url" class="form-control" placeholder="@L("EnterHere")" required />
+        </div>
+
+        <button ng-click="vm.saveKbQueue()" ng-disabled="newKbQueueForm.$invalid" type="submit" class="btn btn-primary">@L("Create")</button>
+
+    </form>
+</div>

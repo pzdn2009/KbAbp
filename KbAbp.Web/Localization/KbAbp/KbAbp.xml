@@ -20,15 +20,15 @@
     <text name="EnterHere" value="Enter here!" />
     <text name="Description" value="Description" />
     <text name="Remark" value ="Remark" />
+    <text name="All" value="All" />
+    <text name="Active" value="Active" />
+    <text name="Completed" value="Completed" />
 
     <!--Task-->
     <text name="TaskManagement" value="Task Management" />
     <text name="Task" value="Task" />
     <text name="TaskList" value="Task List" />
     <text name="Xtasks" value="Sum of tasks : {0}" />
-    <text name="AllTasks" value="All tasks" />
-    <text name="ActiveTasks" value="Active Tasks" />
-    <text name="CompletedTasks" value="Completed Tasks" />
     <text name="TaskUpdatedMessage" value="TaskUpdatedMessage"/>
 
     <!--Project-->
@@ -40,6 +40,8 @@
     <text name="KBManagement" value="KB Management" />
     <text name="NewKbCategory" value="New KBCategory" />
     <text name="KbCategoryName" value="KB Category Name" />
+    <text name="KbQueueList" value="KB Queue List" />
+    <text name="NewKbQueue" value="New KB Queue" />
 
   </texts>
 </localizationDictionary>
