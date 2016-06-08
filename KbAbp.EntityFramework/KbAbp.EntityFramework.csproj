@@ -117,6 +117,10 @@
     <Compile Include="Migrations\201606070945350_去除重复的名称.Designer.cs">
       <DependentUpon>201606070945350_去除重复的名称.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201606080232452_Add_KbQueue_Tag.cs" />
+    <Compile Include="Migrations\201606080232452_Add_KbQueue_Tag.Designer.cs">
+      <DependentUpon>201606080232452_Add_KbQueue_Tag.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="KbAbpDataModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -143,6 +147,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201606070945350_去除重复的名称.resx">
       <DependentUpon>201606070945350_去除重复的名称.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606080232452_Add_KbQueue_Tag.resx">
+      <DependentUpon>201606080232452_Add_KbQueue_Tag.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

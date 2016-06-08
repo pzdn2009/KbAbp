@@ -85,9 +85,11 @@
     <Compile Include="Kbs\IKbCategoryRepository.cs" />
     <Compile Include="Kbs\KbCategory.cs" />
     <Compile Include="Kbs\KbCategoryItem.cs" />
-    <Compile Include="Kbs\KBQueue.cs" />
+    <Compile Include="Kbs\KbQueue.cs" />
+    <Compile Include="Kbs\KbQueueStatus.cs" />
     <Compile Include="Kbs\Knowledge.cs" />
     <Compile Include="Kbs\KnowledgeCategory.cs" />
+    <Compile Include="Kbs\Tag.cs" />
     <Compile Include="Projects\IProjectRepository.cs" />
     <Compile Include="Projects\Project.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

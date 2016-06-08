@@ -13,6 +13,8 @@ namespace KbAbp.EntityFramework
         public virtual IDbSet<Projects.Project> Projects { get; set; }
         public virtual IDbSet<Kbs.KbCategory> KbCategorys { get; set; }
         public virtual IDbSet<Kbs.KbCategoryItem> KbCategoryItems { get; set; }
+        public virtual IDbSet<Kbs.KbQueue> KbQueues { get; set; }
+        public virtual IDbSet<Kbs.Tag> Tags { get; set; }
 
         /* NOTE: 
          *   Setting "Default" to base class helps us when working migration commands on Package Manager Console.
