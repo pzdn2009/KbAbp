@@ -12,12 +12,33 @@
     <text name="AboutFormat" value="About {0}" />
     <text name="About_AspNetBoilerplateDescription" value="ASP.NET Boilerplate is a starting point for new web applications with best practices and most popular tools! ASP.NET Boilerplate provides an infrastructure for &lt;strong&gt;NLayer architecture&lt;/strong&gt; and &lt;strong&gt;Domain Driven Design&lt;/strong&gt;." />
     <text name="ForMoreInformation" value="For more information" />
+
+    <!--common-->
+    <text name="New" value="New" />
+    <text name="Create" value="Create" />
+    <text name="Edit" value="Edit" />
+    <text name="EnterHere" value="Enter here!" />
+    <text name="Description" value="Description" />
+    <text name="Remark" value ="Remark" />
+
+    <!--Task-->
+    <text name="TaskManagement" value="Task Management" />
     <text name="Task" value="Task" />
-    <text name="TaskUpdatedMessage" value="任务已被更新"/>
-    <text name="NewTask" value="New Task" />
+    <text name="TaskList" value="Task List" />
+    <text name="Xtasks" value="Sum of tasks : {0}" />
+    <text name="AllTasks" value="All tasks" />
+    <text name="ActiveTasks" value="Active Tasks" />
+    <text name="CompletedTasks" value="Completed Tasks" />
+    <text name="TaskUpdatedMessage" value="TaskUpdatedMessage"/>
+
+    <!--Project-->
+    <text name="ProjectManagement" value="Project Management" />
+    <text name="Project" value="Project" />
+    <text name="ProjectList" value="Project List" />
+
+    <!--KB-->
     <text name="KBManagement" value="KB Management" />
     <text name="NewKbCategory" value="New KBCategory" />
-    <text name="Create" value="Create" />
-    <text name="EnterHere" value="Enter here!" />
+
   </texts>
 </localizationDictionary>

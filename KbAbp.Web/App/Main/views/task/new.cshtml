@@ -2,15 +2,15 @@
     <form id="NewTaskForm" role="form" name="newTaskForm" novalidate>
 
         <div class="form-group">
-            <label for="TaskProject">@L("TaskProject")</label>
-            <select ng-model="vm.task.projectid" ng-options="m.id as m.name for m in vm.projects" class="form-control" placeholder="@L("EnterDescriptionHere")" required>
+            <label for="TaskProject">@L("Project")</label>
+            <select ng-model="vm.task.projectid" ng-options="m.id as m.name for m in vm.projects" class="form-control" placeholder="@L("EnterHere")" required>
             </select>
         </div>
 
         <div class="form-group">
-            <label for="TaskDescription">@L("TaskDescription")</label>
-            <textarea id="TaskDescription" ng-model="vm.task.description" class="form-control" rows="3" placeholder="@L("EnterDescriptionHere")" required></textarea>
+            <label for="TaskDescription">@L("Description")</label>
+            <textarea id="TaskDescription" ng-model="vm.task.description" class="form-control" rows="3" placeholder="@L("EnterHere")" required></textarea>
         </div>
-        <button ng-click="vm.saveTask()" ng-disabled="newTaskForm.$invalid" type="submit" class="btn btn-primary">@L("CreateTheTask")</button>
+        <button ng-click="vm.saveTask()" ng-disabled="newTaskForm.$invalid" type="submit" class="btn btn-primary">@L("Create")</button>
     </form>
 </div>
