@@ -28,7 +28,7 @@
             </tr>
             <tr ng-repeat="kbQueue in vm.kbQueues">
                 <td>{{kbQueue.title}}</td>
-                <td>{{kbQueue.url}}</td>
+                <td><a href="{{kbQueue}}" target="_blank">{{kbQueue.url}}</a></td>
                 <td>
                     <span ng-class="{'task-description-active': kbQueue.status == 1, 'task-description-completed': kbQueue.status == 2 }">
                         {{kbQueue.status == 1 ? '@L("Active")' : '@L("Completed")'}}

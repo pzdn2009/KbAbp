@@ -1,8 +1,8 @@
 ﻿(function () {
     var controllerId = "app.views.kbqueue.new";
     angular.module('app').controller(controllerId, [
-        '$scope', 'abp.services.app.kbqueue'
-    , function ($scope, kbQueueService) {
+        '$scope', '$location', 'abp.services.app.kbqueue'
+    , function ($scope, $location, kbQueueService) {
         var vm = this;
 
         vm.kbqueue = {
