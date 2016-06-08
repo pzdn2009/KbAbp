@@ -50,7 +50,7 @@
                 })
                 .state('newkbcategory', {
                     url: '/newkbcategory',
-                    templateUrl: '/App/Main/views/kbcategory/new.cshtml',
+                    templateUrl: '/App/Main/views/kb/newkbcategory.cshtml',
                     menu: 'NewKbCategory' //Matches to name of 'NewKBCategory' menu in KbAbpNavigationProvider
                 })
                 .state('about', {

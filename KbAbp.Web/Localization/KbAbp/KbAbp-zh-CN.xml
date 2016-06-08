@@ -38,7 +38,8 @@
     
     <!--KB-->
     <text name="KBManagement" value="KB管理" />
-    <text name="KbCategoryName" value="Kb类别名称" />
+    <text name="NewKbCategory" value="新增KB类别" />
+    <text name="KbCategoryName" value="类别名称" />
     
   </texts>
 </localizationDictionary>

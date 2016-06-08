@@ -32,7 +32,7 @@ namespace KbAbp.Web
                 .AddItem(
                     new MenuItemDefinition(
                         "KBManagement", new LocalizableString("KBManagement", KbAbpConsts.LocalizationSourceName), icon: "fa fa-info")
-                        .AddItem(new MenuItemDefinition("NewKbCategory", new LocalizableString("New", KbAbpConsts.LocalizationSourceName), url: "#/newkbcategory", icon: "fa fa-plus"))
+                        .AddItem(new MenuItemDefinition("NewKbCategory", new LocalizableString("NewKbCategory", KbAbpConsts.LocalizationSourceName), url: "#/newkbcategory", icon: "fa fa-plus"))
                 )
                 .AddItem(
                     new MenuItemDefinition("About", new LocalizableString("About", KbAbpConsts.LocalizationSourceName), url: "#/about", icon: "fa fa-info")
