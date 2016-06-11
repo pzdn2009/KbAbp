@@ -19,9 +19,13 @@ namespace KbAbp.Tests
 
         }
 
+        /// <summary>
+        /// 是否为真是DB
+        /// </summary>
+        /// <param name="isReal"></param>
         public AppTestBase(bool isReal)
         {
-
+        
         }
     }
 }
