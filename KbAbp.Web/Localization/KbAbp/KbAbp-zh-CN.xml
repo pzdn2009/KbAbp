@@ -35,6 +35,7 @@
     <text name="ProjectManagement" value="项目管理" />
     <text name="Project" value="项目" />
     <text name="ProjectList" value="项目列表" />
+    <text name="Xprojects" value="项目数 : {0}" />
     
     <!--KB-->
     <text name="KBManagement" value="KB管理" />

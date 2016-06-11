@@ -35,6 +35,7 @@
     <text name="ProjectManagement" value="Project Management" />
     <text name="Project" value="Project" />
     <text name="ProjectList" value="Project List" />
+    <text name="Xprojects" value="Sum of projects : {0}" />
 
     <!--KB-->
     <text name="KBManagement" value="KB Management" />
