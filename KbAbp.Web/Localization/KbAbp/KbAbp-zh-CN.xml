@@ -41,6 +41,8 @@
     <text name="KBManagement" value="KB管理" />
     <text name="NewKbCategory" value="新增KB类别" />
     <text name="KbCategoryName" value="类别名称" />
+    <text name="NewKbCategoryItem" value="新增KB类别项" />
+    <text name="KbCategoryItemName" value="KB类别项名称" />
     <text name="KbQueueList" value="我的队列" />
     <text name="NewKbQueue" value="新增队列" />
     

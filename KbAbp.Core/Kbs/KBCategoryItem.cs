@@ -30,11 +30,11 @@ namespace KbAbp.Kbs
         /// <summary>
         /// 外键
         /// </summary>
-        public long KBCategoryID { get; set; }
+        public long KbCategoryId { get; set; }
 
         /// <summary>
         /// 外键对象
         /// </summary>
-        public KbCategory KBCategory { get; set; }
+        public KbCategory KbCategory { get; set; }
     }
 }

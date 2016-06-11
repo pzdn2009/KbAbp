@@ -41,6 +41,8 @@
     <text name="KBManagement" value="KB Management" />
     <text name="NewKbCategory" value="New KBCategory" />
     <text name="KbCategoryName" value="KB Category Name" />
+    <text name="NewKbCategoryItem" value="New KBCategory Item" />
+    <text name="KbCategoryItemName" value="KB Category Item Name" />
     <text name="KbQueueList" value="KB Queue List" />
     <text name="NewKbQueue" value="New KB Queue" />
 

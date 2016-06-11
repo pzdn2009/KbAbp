@@ -89,6 +89,7 @@
   <ItemGroup>
     <Compile Include="KbAbpApplicationModule.cs" />
     <Compile Include="KbAbpAppServiceBase.cs" />
+    <Compile Include="Kbs\Dtos\CreateKbCategoryItemInput.cs" />
     <Compile Include="Kbs\Dtos\CreateKbQueueInput.cs" />
     <Compile Include="Kbs\Dtos\CreateKbCategoryInput.cs" />
     <Compile Include="Kbs\Dtos\KbCategoryDto.cs" />
@@ -97,11 +98,14 @@
     <Compile Include="Kbs\Dtos\GetKbQueueInput.cs" />
     <Compile Include="Kbs\Dtos\GetKbQueueOutput.cs" />
     <Compile Include="Kbs\Dtos\KbQueueDto.cs" />
+    <Compile Include="Kbs\Dtos\GetKbCategoryItemInput.cs" />
+    <Compile Include="Kbs\Dtos\GetKbCategoryItemOutput.cs" />
     <Compile Include="Kbs\IKbCategoryAppService.cs" />
     <Compile Include="Kbs\IKbCategoryItemAppService.cs" />
     <Compile Include="Kbs\IKbQueueAppService.cs" />
     <Compile Include="Kbs\KbCategoryAppService.cs" />
     <Compile Include="Kbs\KbCategoryItemAppService.cs" />
+    <Compile Include="Kbs\Dtos\KbCategoryItemDto.cs" />
     <Compile Include="Kbs\KbQueueAppService.cs" />
     <Compile Include="Kbs\Dtos\UpdateKbQueueInput.cs" />
     <Compile Include="Projects\Dtos\CreateProjectInput.cs" />

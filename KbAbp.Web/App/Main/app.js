@@ -53,6 +53,11 @@
                     templateUrl: '/App/Main/views/kb/newkbcategory.cshtml',
                     menu: 'NewKbCategory' //Matches to name of 'NewKBCategory' menu in KbAbpNavigationProvider
                 })
+                .state('newkbcategoryitem', {
+                    url: '/newkbcategoryitem',
+                    templateUrl: '/App/Main/views/kb/newkbcategoryitem.cshtml',
+                    menu: 'NewKbCategoryItem' //Matches to name of 'NewKBCategory' menu in KbAbpNavigationProvider
+                })
                 .state('kbqueuelist', {
                     url: '/kbqueuelist',
                     templateUrl: '/App/Main/views/kb/kbqueuelist.cshtml',

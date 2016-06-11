@@ -1,4 +1,5 @@
-﻿using System;
+﻿using KbAbp.Kbs.Dtos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,8 @@ namespace KbAbp.Kbs
 {
     public interface IKbCategoryItemAppService
     {
+        GetKbCategoryItemOutput GetKbCategoryItems(GetKbCategoryItemInput input);
 
+        void CreateKbCategoryItem(CreateKbCategoryItemInput input);
     }
 }
