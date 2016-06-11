@@ -11,9 +11,11 @@ namespace KbAbp.Kbs
 {
     public class KbCategoryItemAppService : ApplicationService, IKbCategoryItemAppService
     {
+        private IKbCategoryRepository _KbCategoryRepository;
         private IKbCategoryItemRepository _KbCategoryItemRepository;
-        public KbCategoryItemAppService(IKbCategoryItemRepository kbCategoryItemRepository)
+        public KbCategoryItemAppService(IKbCategoryRepository kbCategoryRepository, IKbCategoryItemRepository kbCategoryItemRepository)
         {
+            _KbCategoryRepository = kbCategoryRepository;
             _KbCategoryItemRepository = kbCategoryItemRepository;
         }
 
@@ -22,10 +24,11 @@ namespace KbAbp.Kbs
 
         public void CreateKbCategoryItem(CreateKbCategoryItemInput input)
         {
+            var kbCategory = _KbCategoryRepository.Get(input.KbCategoryId);
             _KbCategoryItemRepository.Insert(new KbCategoryItem()
             {
                 Name = input.Name,
-                Code = input.Name,
+                Code = kbCategory.Code,
                 KbCategoryId = input.KbCategoryId
             });
         }

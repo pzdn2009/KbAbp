@@ -26,7 +26,7 @@ namespace KbAbp.Kbs
                 _kbCategoryRepository.Insert(new KbCategory()
                 {
                     Name = input.Name,
-                    Code = input.Name
+                    Code = GetCode()
                 });
             }
         }
@@ -41,6 +41,11 @@ namespace KbAbp.Kbs
             {
                 KbCategories = Mapper.Map<List<KbCategoryDto>>(q)
             };
+        }
+
+        public static string GetCode()
+        {
+            return Convert.ToBase64String(Guid.NewGuid().ToByteArray());
         }
     }
 }
