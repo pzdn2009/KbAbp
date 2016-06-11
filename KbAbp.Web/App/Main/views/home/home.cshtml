@@ -5,8 +5,8 @@
     @*<p class="lead">@L("Home_ThisIsATemplate")</p>*@
 
     <div class="form-inline">
-        <label class="col-lg-8 text-right" for="comKbType">KB类型:</label>
-        <select ng-model="kbtype" class="form-control text-right col-lg-4" ng-options="m.id as m.name for m in vm.kbCategories"></select>
+        <label class="col-lg-8 text-right" for="kbType">KB类型:</label>
+        <select ng-model="kbType" ng-change="vm.kbTypeChange();" class="form-control text-right col-lg-4" ng-options="m.id as m.name for m in vm.kbCategories"></select>
     </div>
 
     <div style="clear:both;">
@@ -14,18 +14,9 @@
 
     <div class="container mycontainer" style="text-align: center; margin-top: 20px;">
         <div class="row">
-            <div class="col-md-3 myblock">
-                @Html.ActionLink("html", "KnowledgeList", "Knowledge", new { type = "html" }, null)
+            <div class="col-md-3 myblock" ng-repeat="kbcategoryitem in vm.kbCategoryItems">
+                @Html.ActionLink("{{kbcategoryitem.name}}", "KnowledgeList", "Knowledge", new { type = "{{kbcategoryitem.name}}" }, null)
             </div>
-
-            <div class="col-md-3 myblock">
-                @Html.ActionLink("html", "KnowledgeList", "Knowledge", new { type = "css" }, null)
-            </div>
-
-            <div class="col-md-3 myblock">
-                @Html.ActionLink("html", "KnowledgeList", "Knowledge", new { type = "js" }, null)
-            </div>
-
         </div>
     </div>
 </div>

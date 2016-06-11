@@ -1,7 +1,8 @@
 ﻿(function () {
     var controllerId = 'app.views.home';
     angular.module('app').controller(controllerId, [
-        '$scope', 'abp.services.app.kbcategory', function ($scope, kbCategoryService) {
+        '$scope', 'abp.services.app.kbcategory', 'abp.services.app.kbcategoryitem',
+        function ($scope, kbCategoryService, kbCategoryItemService) {
             var vm = this;
             vm.kbCategories = [];
 
@@ -12,6 +13,16 @@
                         console.log(vm.kbCategories);
                     })
                 );
+
+            vm.kbTypeChange = function () {
+                abp.ui.setBusy( //Set whole page busy until getTasks complete
+                    null,
+                    kbCategoryItemService.getKbCategoryItems({ KbCategoryId: $scope.kbType }).success(function (data) {
+                        vm.kbCategoryItems = data.kbCategoryItems;
+                        console.log(vm.kbCategoryItems);
+                    })
+                );
+            };
         }
     ]);
 })();
