@@ -82,6 +82,8 @@
     <Compile Include="KbAbpConsts.cs" />
     <Compile Include="KbAbpCoreModule.cs" />
     <Compile Include="Kbs\IKbCategoryItemRepository.cs" />
+    <Compile Include="Kbs\IKnowledgeCategoryRepository.cs" />
+    <Compile Include="Kbs\IKnowledgeRepository.cs" />
     <Compile Include="Kbs\IKbCategoryRepository.cs" />
     <Compile Include="Kbs\KbCategory.cs" />
     <Compile Include="Kbs\KbCategoryItem.cs" />

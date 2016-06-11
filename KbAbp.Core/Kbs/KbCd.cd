@@ -10,7 +10,7 @@
   <Class Name="KbAbp.Kbs.KbCategoryItem" Collapsed="true">
     <Position X="3" Y="1" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAgAAQAACAAAAAAAAAAAEAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAEQAAAAAAAAAAAAAAAAAACA=</HashCode>
       <FileName>Kbs\KbCategoryItem.cs</FileName>
     </TypeIdentifier>
   </Class>
