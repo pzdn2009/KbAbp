@@ -23,6 +23,8 @@ namespace KbAbp
             DynamicApiControllerBuilder.For<IKbCategoryAppService>("app/kbcategory").Build();
             DynamicApiControllerBuilder.For<IKbCategoryItemAppService>("app/kbcategoryitem").Build();
             DynamicApiControllerBuilder.For<IKbQueueAppService>("app/kbqueue").Build();
+            DynamicApiControllerBuilder.For<IKnowledgeCategoryAppService>("app/knowledgecategory").Build();
+            DynamicApiControllerBuilder.For<IKnowledgeAppService>("app/knowledge").Build();
         }
     }
 }
