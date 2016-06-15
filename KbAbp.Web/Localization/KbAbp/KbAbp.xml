@@ -23,6 +23,7 @@
     <text name="All" value="All" />
     <text name="Active" value="Active" />
     <text name="Completed" value="Completed" />
+    <text name="XExists" value="{0}:has exists!" />
 
     <!--Task-->
     <text name="TaskManagement" value="Task Management" />
@@ -45,6 +46,8 @@
     <text name="KbCategoryItemName" value="KB Category Item Name" />
     <text name="KbQueueList" value="KB Queue List" />
     <text name="NewKbQueue" value="New KB Queue" />
+    <text name="NewKnowledgeCategory" value="New Knowledge Category" />
+    <text name="KnowledgeCategoryName" value="Knowledge Category Name" />
 
   </texts>
 </localizationDictionary>

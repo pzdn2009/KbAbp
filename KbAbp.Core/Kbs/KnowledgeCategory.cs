@@ -15,5 +15,12 @@ namespace KbAbp.Kbs
         /// </summary>
         [MaxLength(100)]
         public string Name { get; set; }
+
+        /// <summary>
+        /// Kb类别项Id
+        /// </summary>
+        public long KbCategoryItemId { get; set; }
+
+        public virtual KbCategoryItem KbCategoryItem { get; set; }
     }
 }

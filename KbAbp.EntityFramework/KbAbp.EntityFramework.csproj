@@ -127,6 +127,10 @@
     <Compile Include="Migrations\201606110454521_Create_Knowledge.Designer.cs">
       <DependentUpon>201606110454521_Create_Knowledge.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201606150525450_KnowledgeCategoryAndKbCategoryItem.cs" />
+    <Compile Include="Migrations\201606150525450_KnowledgeCategoryAndKbCategoryItem.Designer.cs">
+      <DependentUpon>201606150525450_KnowledgeCategoryAndKbCategoryItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="KbAbpDataModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -159,6 +163,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201606110454521_Create_Knowledge.resx">
       <DependentUpon>201606110454521_Create_Knowledge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606150525450_KnowledgeCategoryAndKbCategoryItem.resx">
+      <DependentUpon>201606150525450_KnowledgeCategoryAndKbCategoryItem.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

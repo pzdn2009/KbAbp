@@ -35,8 +35,6 @@ namespace KbAbp.Tasks
             tasks = tasks.OrderBy(zw => zw.State).ThenBy(zw => zw.ProjectID)
                 .ThenByDescending(zw => zw.CreationTime);
 
-            Mapper.CreateMap<Task, TaskDto>().ForMember(dest => dest.ProjectName, option => option.MapFrom(
-                 src => src.Project != null ? src.Project.Name : string.Empty));
 
             var ret = new GetTasksOutput()
             {

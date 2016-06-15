@@ -9,6 +9,8 @@ namespace KbAbp
         public override void Initialize()
         {
             IocManager.RegisterAssemblyByConvention(Assembly.GetExecutingAssembly());
+
+            DtoMappings.Map();
         }
     }
 }

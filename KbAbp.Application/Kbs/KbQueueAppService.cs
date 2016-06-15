@@ -35,8 +35,6 @@ namespace KbAbp.Kbs
         {
             var q = _kbQueueRepository.GetAll();
 
-            Mapper.CreateMap<KbQueue, KbQueueDto>();
-
             return new GetKbQueueOutput()
             {
                 KbQueues = Mapper.Map<List<KbQueueDto>>(q)

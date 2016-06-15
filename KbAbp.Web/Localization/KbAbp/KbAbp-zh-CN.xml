@@ -24,6 +24,7 @@
     <text name="All" value="所有" />
     <text name="Active" value="未完成" />
     <text name="Completed" value="已完成" />
+    <text name="XExists" value="{0}：已经存在!" />
     
     <!--任务-->
     <text name="TaskManagement" value="任务管理" />
@@ -45,6 +46,8 @@
     <text name="KbCategoryItemName" value="KB类别项名称" />
     <text name="KbQueueList" value="我的队列" />
     <text name="NewKbQueue" value="新增队列" />
+    <text name="NewKnowledgeCategory" value="新增知识类别" />
+    <text name="KnowledgeCategoryName" value="知识类别名" />
     
   </texts>
 </localizationDictionary>

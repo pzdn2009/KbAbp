@@ -37,8 +37,7 @@ namespace KbAbp.Projects
             {
                 projects = projects.Where(zw => zw.Name.Contains(input.Keyword));
             }
-
-            Mapper.CreateMap<Project, ProjectDto>();
+            
             return new GetProjectOutput()
             {
                 Projects = Mapper.Map<List<ProjectDto>>(projects)

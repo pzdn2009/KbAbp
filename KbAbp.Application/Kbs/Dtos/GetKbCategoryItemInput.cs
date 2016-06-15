@@ -2,6 +2,6 @@
 {
     public class GetKbCategoryItemInput
     {
-        public long KbCategoryId { get; set; }
+        public long? KbCategoryId { get; set; }
     }
 }

@@ -35,8 +35,6 @@ namespace KbAbp.Kbs
         {
             var q = _kbCategoryRepository.GetAll();
 
-            Mapper.CreateMap<KbCategory, KbCategoryDto>();
-
             return new GetKbCategoryOutput()
             {
                 KbCategories = Mapper.Map<List<KbCategoryDto>>(q)

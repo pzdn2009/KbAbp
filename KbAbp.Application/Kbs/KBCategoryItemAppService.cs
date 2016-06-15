@@ -36,9 +36,9 @@ namespace KbAbp.Kbs
         public GetKbCategoryItemOutput GetKbCategoryItems(GetKbCategoryItemInput input)
         {
             var q = _KbCategoryItemRepository.GetAll();
-            if (input != null)
+            if (input != null && input.KbCategoryId.HasValue)
             {
-                q = q.Where(zw => zw.KbCategoryId == input.KbCategoryId);
+                q = q.Where(zw => zw.KbCategoryId == input.KbCategoryId.Value);
             }
 
             Mapper.CreateMap<KbCategoryItem, KbCategoryItemDto>();

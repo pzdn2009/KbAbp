@@ -68,6 +68,11 @@
                     templateUrl: '/App/Main/views/kb/newkbqueue.cshtml',
                     menu: 'NewKbQueue'
                 })
+                .state('newknowledgecategory', {
+                    url: '/newknowledgecategory',
+                    templateUrl: '/App/Main/views/kb/newknowledgecategory.cshtml',
+                    menu: 'NewKnowledgeCategory'
+                })
                 .state('about', {
                     url: '/about',
                     templateUrl: '/App/Main/views/about/about.cshtml',
