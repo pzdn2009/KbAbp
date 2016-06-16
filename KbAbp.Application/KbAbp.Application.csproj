@@ -88,7 +88,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DtoMappings.cs" />
-    <Compile Include="Kbs\Dtos\CreateKnowledgeInput.cs" />
+    <Compile Include="Kbs\Dtos\CreateKnowledgeCategoryInput.cs" />
     <Compile Include="PagingGridInputBase.cs" />
     <Compile Include="KbAbpApplicationModule.cs" />
     <Compile Include="KbAbpAppServiceBase.cs" />

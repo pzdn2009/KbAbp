@@ -16,7 +16,7 @@ namespace KbAbp.Kbs
             this._KnowledgeCategoryRepository = knowledgeCategoryRepository;
         }
 
-        public void CreateKnowledgeCategory(CreateKnowledgeInput input)
+        public void CreateKnowledgeCategory(CreateKnowledgeCategoryInput input)
         {
             var exist = _KnowledgeCategoryRepository.GetAll().Where(zw => zw.Name == input.Name) != null;
             if (exist)

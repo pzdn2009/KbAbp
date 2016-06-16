@@ -2,7 +2,7 @@
 
 namespace KbAbp.Kbs
 {
-    public class CreateKnowledgeInput : IInputDto
+    public class CreateKnowledgeCategoryInput : IInputDto
     {
         public string Name { get; set; }
 
