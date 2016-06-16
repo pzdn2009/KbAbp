@@ -8,6 +8,6 @@ namespace KbAbp.Kbs
 {
     public interface IKnowledgeAppService
     {
-        //void CreateKnowledge(CreateKnowledgeInput input);
+        void CreateKnowledge(CreateKnowledgeInput input);
     }
 }

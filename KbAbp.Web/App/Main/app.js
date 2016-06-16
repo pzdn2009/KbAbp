@@ -73,6 +73,11 @@
                     templateUrl: '/App/Main/views/kb/newknowledgecategory.cshtml',
                     menu: 'NewKnowledgeCategory'
                 })
+                .state('newknowledge', {
+                    url: '/newknowledge',
+                    templateUrl: '/App/Main/views/kb/newknowledge.cshtml',
+                    menu: 'NewKnowledge'
+                })
                 .state('about', {
                     url: '/about',
                     templateUrl: '/App/Main/views/about/about.cshtml',

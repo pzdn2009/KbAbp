@@ -37,6 +37,7 @@ namespace KbAbp.Web
                         .AddItem(new MenuItemDefinition("KbQueueList", new LocalizableString("KbQueueList", KbAbpConsts.LocalizationSourceName), url: "#/kbqueuelist", icon: "fa fa-list"))
                         .AddItem(new MenuItemDefinition("NewKbQueue", new LocalizableString("NewKbQueue", KbAbpConsts.LocalizationSourceName), url: "#/newkbqueue", icon: "fa fa-plus"))
                         .AddItem(new MenuItemDefinition("NewKnowledgeCategory", new LocalizableString("NewKnowledgeCategory", KbAbpConsts.LocalizationSourceName), url: "#/newknowledgecategory", icon: "fa fa-plus"))
+                        .AddItem(new MenuItemDefinition("NewKnowledge", new LocalizableString("NewKnowledge", KbAbpConsts.LocalizationSourceName), url: "#/newknowledge", icon: "fa fa-plus"))
                 )
                 .AddItem(
                     new MenuItemDefinition("About", new LocalizableString("About", KbAbpConsts.LocalizationSourceName), url: "#/about", icon: "fa fa-info")

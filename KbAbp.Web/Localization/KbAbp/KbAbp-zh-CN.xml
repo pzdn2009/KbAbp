@@ -48,6 +48,7 @@
     <text name="NewKbQueue" value="新增队列" />
     <text name="NewKnowledgeCategory" value="新增知识类别" />
     <text name="KnowledgeCategoryName" value="知识类别名" />
+    <text name="NewKnowledge" value="新增知识点" />
     
   </texts>
 </localizationDictionary>

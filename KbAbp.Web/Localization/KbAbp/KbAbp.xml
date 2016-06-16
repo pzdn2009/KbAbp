@@ -48,6 +48,7 @@
     <text name="NewKbQueue" value="New KB Queue" />
     <text name="NewKnowledgeCategory" value="New Knowledge Category" />
     <text name="KnowledgeCategoryName" value="Knowledge Category Name" />
+    <text name="NewKnowledge" value="New Knowledge" />
 
   </texts>
 </localizationDictionary>
