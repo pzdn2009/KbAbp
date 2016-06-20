@@ -42,24 +42,28 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Abp, Version=0.7.6.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Abp.0.7.6.0\lib\net452\Abp.dll</HintPath>
+    <Reference Include="Abp, Version=0.9.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Abp.0.9.5.0\lib\net452\Abp.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Abp.AutoMapper, Version=0.7.6.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Abp.AutoMapper.0.7.6.0\lib\net452\Abp.AutoMapper.dll</HintPath>
+    <Reference Include="Abp.AutoMapper, Version=0.9.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Abp.AutoMapper.0.9.5.0\lib\net452\Abp.AutoMapper.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Abp.Web, Version=0.7.6.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Abp.Web.0.7.6.0\lib\net452\Abp.Web.dll</HintPath>
+    <Reference Include="Abp.Web, Version=0.9.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Abp.Web.0.9.5.0\lib\net452\Abp.Web.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Abp.Web.Api, Version=0.7.6.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Abp.Web.Api.0.7.6.0\lib\net452\Abp.Web.Api.dll</HintPath>
+    <Reference Include="Abp.Web.Api, Version=0.9.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Abp.Web.Api.0.9.5.0\lib\net452\Abp.Web.Api.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Abp.Web.Mvc, Version=0.7.6.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Abp.Web.Mvc.0.7.6.0\lib\net452\Abp.Web.Mvc.dll</HintPath>
+    <Reference Include="Abp.Web.Common, Version=0.9.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Abp.Web.Common.0.9.5.0\lib\net452\Abp.Web.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Abp.Web.Mvc, Version=0.9.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Abp.Web.Mvc.0.9.5.0\lib\net452\Abp.Web.Mvc.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Antlr3.Runtime">
@@ -100,9 +104,9 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Nito.AsyncEx, Version=3.0.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Nito.AsyncEx.3.0.1\lib\net45\Nito.AsyncEx.dll</HintPath>
@@ -116,8 +120,9 @@
       <HintPath>..\packages\Nito.AsyncEx.3.0.1\lib\net45\Nito.AsyncEx.Enlightenment.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="System.Collections.Immutable">
-      <HintPath>..\packages\Microsoft.Bcl.Immutable.1.0.34\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
+    <Reference Include="System.Collections.Immutable, Version=1.1.36.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Immutable.1.1.36\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Net.Http" />
@@ -125,6 +130,12 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
     </Reference>
+    <Reference Include="System.Runtime, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\System.Runtime.4.0.0\ref\netcore50\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -188,6 +199,8 @@
     <Content Include="Abp\Framework\scripts\libs\abp.blockUI.js" />
     <Content Include="Abp\Framework\scripts\libs\abp.jquery.js" />
     <Content Include="Abp\Framework\scripts\libs\abp.jtable.js" />
+    <Content Include="Abp\Framework\scripts\libs\abp.moment.js" />
+    <Content Include="Abp\Framework\scripts\libs\abp.signalr.js" />
     <Content Include="Abp\Framework\scripts\libs\abp.spin.js" />
     <Content Include="Abp\Framework\scripts\libs\abp.sweet-alert.js" />
     <Content Include="Abp\Framework\scripts\libs\abp.toastr.js" />
@@ -337,9 +350,6 @@
     <Content Include="Scripts\angular-aria.min.js.map" />
     <Content Include="Scripts\angular-animate.min.js.map" />
     <Content Include="Scripts\angular.min.js.map" />
-    <Content Include="Abp\Framework\styles\abp.mixings.less" />
-    <Content Include="Abp\Framework\styles\abp.less" />
-    <Content Include="Abp\Framework\styles\abp.css.map" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -359,6 +369,10 @@
     <Content Include="App\Main\views\kb\newkbcategoryitem.cshtml" />
     <Content Include="App\Main\views\kb\newknowledgecategory.cshtml" />
     <Content Include="App\Main\views\kb\newknowledge.cshtml" />
+    <Content Include="Abp\Framework\styles\abp.mixings.less" />
+    <Content Include="Abp\Framework\styles\abp.mixings.css.map" />
+    <Content Include="Abp\Framework\styles\abp.less" />
+    <Content Include="Abp\Framework\styles\abp.css.map" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-dj.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-er.js" />
