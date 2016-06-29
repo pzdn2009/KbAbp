@@ -24,6 +24,8 @@ namespace KbAbp
             Mapper.CreateMap<KbQueue, KbQueueDto>();
 
             Mapper.CreateMap<KbCategory, KbCategoryDto>();
+
+            Mapper.CreateMap<KnowledgeCategory, KnowledgeCategoryDto>();
         }
     }
 }

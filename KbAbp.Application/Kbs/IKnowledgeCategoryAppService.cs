@@ -10,5 +10,7 @@ namespace KbAbp.Kbs
     public interface IKnowledgeCategoryAppService
     {
         void CreateKnowledgeCategory(CreateKnowledgeCategoryInput input);
+
+        GetKnowledgeCategoryOutput GetKnowledgeCategorys(GetKnowledgeCategoryInput input);
     }
 }

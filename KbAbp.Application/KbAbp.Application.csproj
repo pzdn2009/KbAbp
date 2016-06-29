@@ -92,8 +92,11 @@
   <ItemGroup>
     <Compile Include="DtoMappings.cs" />
     <Compile Include="JTablePagingGridInput.cs" />
-    <Compile Include="Kbs\Dtos\CreateKnowledgeInput.cs" />
     <Compile Include="Kbs\Dtos\CreateKnowledgeCategoryInput.cs" />
+    <Compile Include="Kbs\Dtos\CreateKnowledgeInput.cs" />
+    <Compile Include="Kbs\Dtos\GetKnowledgeCategoryInput.cs" />
+    <Compile Include="Kbs\Dtos\GetKnowledgeCategoryOutput.cs" />
+    <Compile Include="Kbs\Dtos\KnowledgeCategoryDto.cs" />
     <Compile Include="PagingGridInputBase.cs" />
     <Compile Include="KbAbpApplicationModule.cs" />
     <Compile Include="KbAbpAppServiceBase.cs" />
