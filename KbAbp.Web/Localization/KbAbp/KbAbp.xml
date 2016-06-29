@@ -24,6 +24,7 @@
     <text name="Active" value="Active" />
     <text name="Completed" value="Completed" />
     <text name="XExists" value="{0}:has exists!" />
+    <text name="Detail" value="detail" />
 
     <!--Task-->
     <text name="TaskManagement" value="Task Management" />
@@ -49,6 +50,7 @@
     <text name="NewKnowledgeCategory" value="New Knowledge Category" />
     <text name="KnowledgeCategoryName" value="Knowledge Category Name" />
     <text name="NewKnowledge" value="New Knowledge" />
+    <text name="KnowledgeName" value="Knowledge Name" />
 
   </texts>
 </localizationDictionary>

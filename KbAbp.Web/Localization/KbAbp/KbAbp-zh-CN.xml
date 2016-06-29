@@ -25,6 +25,7 @@
     <text name="Active" value="未完成" />
     <text name="Completed" value="已完成" />
     <text name="XExists" value="{0}：已经存在!" />
+    <text name="Detail" value="详细" />
     
     <!--任务-->
     <text name="TaskManagement" value="任务管理" />
@@ -49,6 +50,7 @@
     <text name="NewKnowledgeCategory" value="新增知识类别" />
     <text name="KnowledgeCategoryName" value="知识类别名" />
     <text name="NewKnowledge" value="新增知识点" />
+    <text name="KnowledgeName" value="知识点名称" />
     
   </texts>
 </localizationDictionary>

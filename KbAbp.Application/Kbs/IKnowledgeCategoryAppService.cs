@@ -11,6 +11,6 @@ namespace KbAbp.Kbs
     {
         void CreateKnowledgeCategory(CreateKnowledgeCategoryInput input);
 
-        GetKnowledgeCategoryOutput GetKnowledgeCategorys(GetKnowledgeCategoryInput input);
+        GetKnowledgeCategoryOutput GetKnowledgeCategories(GetKnowledgeCategoryInput input);
     }
 }

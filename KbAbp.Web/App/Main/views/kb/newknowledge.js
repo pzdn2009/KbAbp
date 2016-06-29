@@ -1,15 +1,18 @@
 ﻿(function () {
     var controllerId = "app.views.knowledge.new";
     angular.module('app').controller(controllerId, [
-        '$scope', '$location', 'abp.services.app.kbcategoryitem', 'abp.services.app.knowledgecategory'
-    , function ($scope, $location, kbCategoryItemService, knowledgeCategoryService) {
+        '$scope', '$location', 'abp.services.app.kbcategoryitem', 'abp.services.app.knowledgecategory',
+        'abp.services.app.knowledge'
+    , function ($scope, $location, kbCategoryItemService, knowledgeCategoryService, knowledgeService) {
         var vm = this;
 
-        vm.knowledgeCategory = {
-            name:''
+        vm.knowledge = {
+            name: '',
+            detail: ''
         };
 
         vm.kbCategoryItems = {};
+        vm.knowledgeCategories = {};
 
         var localize = abp.localization.getSource('KbAbp');
 
@@ -18,20 +21,28 @@
                null,
                kbCategoryItemService.getKbCategoryItems({}
                ).success(function (data) {
-                   console.log(data);
                    vm.kbCategoryItems = data.kbCategoryItems;
                })
                );
         }();
 
-        vm.saveKnowledgeCategory = function () {
+        vm.kbCategoryItemsChange = function () {
             abp.ui.setBusy(
                 null,
-                knowledgeCategoryService.createKnowledgeCategory(
-                vm.knowledgeCategory
+                knowledgeCategoryService.getKnowledgeCategories({ KbCategoryItemId: $scope.kbCategoryItemId }).success(function (data) {
+                    vm.knowledgeCategories = data.knowledgeCategories;
+                })
+            );
+        };
+
+        vm.saveKnowledge = function () {
+            abp.ui.setBusy(
+                null,
+                knowledgeService.createKnowledge(
+                vm.knowledge
                 ).success(function (data) {
-                    abp.notify.info(abp.utils.formatString(localize("KnowledgeCategoryCreateMessage"), vm.kbcategory.title));
-                    $location.path('/kbqueuelist');
+                    abp.notify.info(abp.utils.formatString(localize("KnowledgeCreateMessage"), vm.knowledge.name));
+                    $location.path('/');
                 })
                 );
         };

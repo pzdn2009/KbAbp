@@ -35,7 +35,7 @@ namespace KbAbp.Kbs
             });
         }
 
-        public GetKnowledgeCategoryOutput GetKnowledgeCategorys(GetKnowledgeCategoryInput input)
+        public GetKnowledgeCategoryOutput GetKnowledgeCategories(GetKnowledgeCategoryInput input)
         {
             var q = _KnowledgeCategoryRepository.GetAll();
 
