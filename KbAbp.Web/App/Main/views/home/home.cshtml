@@ -15,7 +15,7 @@
     <div class="container mycontainer" style="text-align: center; margin-top: 20px;">
         <div class="row">
             <div class="col-md-3 myblock" ng-repeat="kbcategoryitem in vm.kbCategoryItems">
-                @Html.ActionLink("{{kbcategoryitem.name}}", "KnowledgeList", "Knowledge", new { type = "{{kbcategoryitem.name}}" }, null)
+                <a ng-href="#/knowledgelist" class="ng-binding">{{kbcategoryitem.name}}</a>
             </div>
         </div>
     </div>
