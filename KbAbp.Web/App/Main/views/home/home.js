@@ -19,7 +19,6 @@
                     null,
                     kbCategoryItemService.getKbCategoryItems({ KbCategoryId: $scope.kbType }).success(function (data) {
                         vm.kbCategoryItems = data.kbCategoryItems;
-                        console.log(vm.kbCategoryItems);
                     })
                 );
             };

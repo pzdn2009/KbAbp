@@ -49,10 +49,5 @@
                 );
         };
 
-        // normal flow, function call
-        $scope.convertMarkdown = function () {
-            vm.convertedMarkdown = marked(vm.markdown);
-        }
-
     }]);
 })();

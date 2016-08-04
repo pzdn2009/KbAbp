@@ -2,8 +2,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using KbAbp.Kbs.Dtos;
+using AutoMapper;
 
 namespace KbAbp.Kbs
 {
@@ -31,6 +31,21 @@ namespace KbAbp.Kbs
                 Detail = input.Detail,
                 KnowledgeCategoryId = input.KnowledgeCategoryId
             });
+        }
+
+        public GetKnowledgeOutput GetKnowledges(GetKnowledgeInput input)
+        {
+            var q = knowledgeRepository.GetAll();
+
+            if (input.KnowledgeCategoryId.HasValue)
+            {
+                q = q.Where(zw => zw.KnowledgeCategoryId == input.KnowledgeCategoryId.Value);
+            }
+
+            return new GetKnowledgeOutput()
+            {
+                 Knowledges = Mapper.Map<List<KnowledgeDto>>(q)
+            };
         }
     }
 }

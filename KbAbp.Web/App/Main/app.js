@@ -85,7 +85,7 @@
                     menu: 'NewKnowledge'
                 })
                 .state('knowledgelist', {
-                    url: '/knowledgelist',
+                    url: '/knowledgelist/:id',
                     templateUrl: '/App/Main/views/kb/knowledgelist.cshtml',
                     menu: 'KnowledgeList'
                 })

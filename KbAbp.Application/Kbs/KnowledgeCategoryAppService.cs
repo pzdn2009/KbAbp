@@ -20,7 +20,7 @@ namespace KbAbp.Kbs
 
         public void CreateKnowledgeCategory(CreateKnowledgeCategoryInput input)
         {
-            var exist = _KnowledgeCategoryRepository.GetAll().Where(zw => zw.Name == input.Name) != null;
+            var exist = _KnowledgeCategoryRepository.GetAll().FirstOrDefault(zw => zw.Name == input.Name) != null;
             if (exist)
             {
                 throw new UserFriendlyException(string.Format(L("XExists"), input.Name));

@@ -1,48 +1,37 @@
 ﻿(function () {
-    var controllerId = "app.views.knowledge.new";
+    var controllerId = "app.views.knowledge.list";
     angular.module('app').controller(controllerId, [
-        '$scope', '$location', 'abp.services.app.kbcategoryitem', 'abp.services.app.knowledgecategory',
-        'abp.services.app.knowledge'
-    , function ($scope, $location, kbCategoryItemService, knowledgeCategoryService, knowledgeService) {
+        '$scope', '$location', '$stateParams', 'marked', 'abp.services.app.knowledgecategory', 'abp.services.app.knowledge'
+    , function ($scope, $location, $stateParams, marked, knowledgeCategoryService, knowledgeService) {
         var vm = this;
 
-        vm.knowledge = {
-            name: '',
-            detail: ''
-        };
-
-        vm.kbCategoryItems = {};
         vm.knowledgeCategories = {};
+        vm.knowledges = {};
 
         var localize = abp.localization.getSource('KbAbp');
 
-        vm.loadkbCategoryItems = function () {
-            abp.ui.setBusy(
-               null,
-               kbCategoryItemService.getKbCategoryItems({}
-               ).success(function (data) {
-                   vm.kbCategoryItems = data.kbCategoryItems;
-               })
-               );
-        }();
-
-        vm.kbCategoryItemsChange = function () {
+        //1.knowledge category get the categories.
+        vm.loadKnowledgeCategories = function () {
             abp.ui.setBusy(
                 null,
-                knowledgeCategoryService.getKnowledgeCategories({ KbCategoryItemId: $scope.kbCategoryItemId }).success(function (data) {
+                knowledgeCategoryService.getKnowledgeCategories({ KbCategoryItemId: $stateParams.id }).success(function (data) {
                     vm.knowledgeCategories = data.knowledgeCategories;
                 })
             );
         };
+        vm.loadKnowledgeCategories();
 
-        vm.saveKnowledge = function () {
+        //2.bind click 
+        vm.knowledgeCategoryClick = function (knowledgeCategory) {
+            
+            vm.activeKnowledgeCategory = knowledgeCategory.name;
+
             abp.ui.setBusy(
                 null,
-                knowledgeService.createKnowledge(
-                vm.knowledge
+                knowledgeService.getKnowledges(
+                { knowledgeCategoryId: knowledgeCategory.id }
                 ).success(function (data) {
-                    abp.notify.info(abp.utils.formatString(localize("KnowledgeCreateMessage"), vm.knowledge.name));
-                    $location.path('/');
+                    vm.knowledges = data.knowledges;
                 })
                 );
         };

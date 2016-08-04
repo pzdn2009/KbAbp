@@ -5,10 +5,6 @@ using KbAbp.Projects;
 using KbAbp.Projects.Dtos;
 using KbAbp.Tasks;
 using KbAbp.Tasks.Dtos;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace KbAbp
 {
@@ -26,6 +22,8 @@ namespace KbAbp
             Mapper.CreateMap<KbCategory, KbCategoryDto>();
 
             Mapper.CreateMap<KnowledgeCategory, KnowledgeCategoryDto>();
+
+            Mapper.CreateMap<Knowledge, KnowledgeDto>();
         }
     }
 }

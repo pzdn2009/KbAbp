@@ -1,29 +1,32 @@
-﻿<div ng-controller="app.views.knowledge.new as vm">
-    <form id="Knowledge" role="form" name="Knowledge" novalidate>
-
-        <div class="form-group">
-            <label for="KbCategoryItemName">@L("KbCategoryItemName")</label>
-            <select id="KbCategoryItemName" ng-model="kbCategoryItemId"
-                    ng-options="m.id as m.name for m in vm.kbCategoryItems" ng-change="vm.kbCategoryItemsChange();" class="form-control" placeholder="@L("EnterHere")" required></select>
+﻿<div ng-controller="app.views.knowledge.list as vm">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <span ng-repeat="knowledgeCategory in vm.knowledgeCategories">
+                <span class="btn-link" href="#" ng-click="vm.knowledgeCategoryClick(knowledgeCategory);">{{knowledgeCategory.name}}</span>
+            </span>
         </div>
-
-        <div class="form-group">
-            <label for="KnowledgeCategory">@L("KnowledgeCategoryName")</label>
-            <select id="KnowledgeCategory" ng-model="vm.knowledge.knowledgeCategoryId"
-                    ng-options="m.id as m.name for m in vm.knowledgeCategories" class="form-control" placeholder="@L("EnterHere")" required></select>
+        <div class="panel-body">
+            <table class="table table-responsive table-striped">
+                <caption ng-model="activeKnowledgeCategory"></caption>
+                <thead>
+                    <tr>
+                        <th class="col-sm-2">Number.</th>
+                        <th class="col-sm-4">Knowledge.</th>
+                        <th>Detail.</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="knowledge in vm.knowledges">
+                        <td>{{knowledge.sort}}</td>
+                        <td>{{knowledge.name}}</td>
+                        <td>
+                            @*Reference:http://ngmodules.org/modules/angular-marked*@
+                            <div marked="knowledge.detail" class="markdown">
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-
-        <div class="form-group">
-            <label for="Name">@L("KnowledgeName")</label>
-            <input id="Name" ng-model="vm.knowledge.name" class="form-control" placeholder="@L("EnterHere")" required />
-        </div>
-
-        <div class="form-group">
-            <label for="Detail">@L("Detail")</label>
-            <textarea id="Detail" ng-model="vm.knowledge.detail" class="form-control" placeholder="@L("EnterHere")" required />
-        </div>
-
-        <button ng-click="vm.saveKnowledge()" ng-disabled="knowledge.$invalid" type="submit" class="btn btn-primary">@L("Create")</button>
-
-    </form>
+    </div>
 </div>

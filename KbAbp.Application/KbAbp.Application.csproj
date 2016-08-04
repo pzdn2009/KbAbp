@@ -96,7 +96,10 @@
     <Compile Include="Kbs\Dtos\CreateKnowledgeInput.cs" />
     <Compile Include="Kbs\Dtos\GetKnowledgeCategoryInput.cs" />
     <Compile Include="Kbs\Dtos\GetKnowledgeCategoryOutput.cs" />
+    <Compile Include="Kbs\Dtos\GetKnowledgeInput.cs" />
+    <Compile Include="Kbs\Dtos\GetKnowledgeOutput.cs" />
     <Compile Include="Kbs\Dtos\KnowledgeCategoryDto.cs" />
+    <Compile Include="Kbs\Dtos\KnowledgeDto.cs" />
     <Compile Include="PagingGridInputBase.cs" />
     <Compile Include="KbAbpApplicationModule.cs" />
     <Compile Include="KbAbpAppServiceBase.cs" />
