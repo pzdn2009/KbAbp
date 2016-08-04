@@ -28,6 +28,7 @@ namespace KbAbp.Kbs
                 IsDeleted = false,
                 Name = input.Name,
                 Sort = maxCnt + 1,
+                Detail = input.Detail,
                 KnowledgeCategoryId = input.KnowledgeCategoryId
             });
         }

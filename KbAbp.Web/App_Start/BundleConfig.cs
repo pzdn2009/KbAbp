@@ -19,6 +19,11 @@ namespace KbAbp.Web
                     .Include("~/Scripts/sweetalert/sweet-alert.css")
                     .Include("~/Content/flags/famfamfam-flags.css", new CssRewriteUrlTransform())
                     .Include("~/Content/font-awesome.min.css", new CssRewriteUrlTransform())
+                    //md editor needs
+                    .Include("~/Content/highlight.js/tomorrow.min.css")
+                    .Include("~/Content/bootstrap-markdown.min.css")
+                    .Include("~/Content/bootstrap-markdown.min.css")
+                    //.Include("~/Content/bootstrap.min.css")
                 );
 
             //~/Bundles/App/vendor/js
@@ -50,6 +55,14 @@ namespace KbAbp.Web
                         "~/Scripts/angular-ui/ui-bootstrap-tpls.min.js",
                         "~/Scripts/angular-ui/ui-utils.min.js",
 
+                        //mark-down
+                        "~/Scripts/marked.js",
+                        "~/Scripts/bootstrap-markdown.js",
+                        "~/Scripts/angular-highlightjs.js",
+                        "~/Scripts/angular-markdown-editor.js",
+                        "~/Scripts/angular-marked.min.js",
+                        "~/Scripts/highlight.min.js",
+                        
                         "~/Abp/Framework/scripts/abp.js",
                         "~/Abp/Framework/scripts/libs/abp.jquery.js",
                         "~/Abp/Framework/scripts/libs/abp.toastr.js",

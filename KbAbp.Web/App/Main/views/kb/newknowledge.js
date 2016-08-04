@@ -1,9 +1,9 @@
 ﻿(function () {
     var controllerId = "app.views.knowledge.new";
     angular.module('app').controller(controllerId, [
-        '$scope', '$location', 'abp.services.app.kbcategoryitem', 'abp.services.app.knowledgecategory',
+        '$scope', '$location', 'marked', 'abp.services.app.kbcategoryitem', 'abp.services.app.knowledgecategory',
         'abp.services.app.knowledge'
-    , function ($scope, $location, kbCategoryItemService, knowledgeCategoryService, knowledgeService) {
+    , function ($scope, $location, marked, kbCategoryItemService, knowledgeCategoryService, knowledgeService) {
         var vm = this;
 
         vm.knowledge = {
@@ -36,6 +36,8 @@
         };
 
         vm.saveKnowledge = function () {
+            //assign
+            vm.knowledge.detail = $scope.markdown;
             abp.ui.setBusy(
                 null,
                 knowledgeService.createKnowledge(
@@ -46,5 +48,11 @@
                 })
                 );
         };
+
+        // normal flow, function call
+        $scope.convertMarkdown = function () {
+            vm.convertedMarkdown = marked(vm.markdown);
+        }
+
     }]);
 })();

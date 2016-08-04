@@ -9,13 +9,19 @@
         'ui.bootstrap',
         'ui.jq',
 
+        //md
+        'hc.marked', 'hljs', 'angular-markdown-editor',
+
         'abp'
     ]);
 
     //Configuration for Angular UI routing.
     app.config([
         '$stateProvider', '$urlRouterProvider',
-        function ($stateProvider, $urlRouterProvider) {
+        //md
+        'markedProvider', 'hljsServiceProvider',
+        function ($stateProvider, $urlRouterProvider,
+            markedProvider, hljsServiceProvider) {
             $urlRouterProvider.otherwise('/');
             $stateProvider
                 .state('home', {
@@ -89,7 +95,25 @@
                     menu: 'About' //Matches to name of 'About' menu in KbAbpNavigationProvider
                 });
 
+            // marked config
+            markedProvider.setOptions({
+                gfm: true,
+                tables: true,
+                sanitize: true,
+                highlight: function (code, lang) {
+                    if (lang) {
+                        return hljs.highlight(lang, code, true).value;
+                    } else {
+                        return hljs.highlightAuto(code).value;
+                    }
+                }
+            });
 
+            // highlight config
+            hljsServiceProvider.setOptions({
+                // replace tab with 4 spaces
+                tabReplace: '    '
+            });
         }
     ]);
 })();
