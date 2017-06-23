@@ -6439,3 +6439,76 @@ WARN  2016-06-06 13:59:57,007 [33   ] Abp.Logging.LogHelper                    -
 WARN  2016-06-06 13:59:57,007 [33   ] Abp.Logging.LogHelper                    - Can not find 'NewProject' in localization source 'KbAbp'!
 WARN  2016-06-06 13:59:57,027 [33   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
 WARN  2016-06-06 13:59:57,044 [33   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+DEBUG 2017-06-23 16:57:40,094 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-06-23 16:57:41,471 [1    ] Abp.Modules.AbpModuleManager             - Found 12 ABP modules in total.
+DEBUG 2017-06-23 16:57:41,477 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-06-23 16:57:41,482 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-06-23 16:57:41,483 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-06-23 16:57:41,483 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-06-23 16:57:41,483 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-06-23 16:57:41,483 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-06-23 16:57:41,483 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-06-23 16:57:41,484 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: KbAbp.KbAbpApplicationModule, KbAbp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-06-23 16:57:41,484 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: KbAbp.KbAbpCoreModule, KbAbp.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-06-23 16:57:41,484 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: KbAbp.KbAbpDataModule, KbAbp.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-06-23 16:57:41,484 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: KbAbp.Web.KbAbpWebModule, KbAbp.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-06-23 16:57:41,484 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: KbAbp.KbAbpWebApiModule, KbAbp.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-06-23 16:57:41,492 [1    ] Abp.Modules.AbpModuleManager             - 12 modules loaded.
+DEBUG 2017-06-23 16:57:41,645 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: KbAbp.EntityFramework.KbAbpDbContext, KbAbp.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-06-23 16:57:42,454 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2017-06-23 16:57:42,467 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-06-23 16:57:42,468 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-06-23 16:57:42,475 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: KbAbp
+DEBUG 2017-06-23 16:57:42,755 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-06-23 16:57:42,915 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2017-06-23 16:57:42,945 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'KbAbp.Tasks.ITaskAppService' with service name 'app/task'.
+DEBUG 2017-06-23 16:57:42,947 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'KbAbp.Projects.IProjectAppService' with service name 'app/project'.
+DEBUG 2017-06-23 16:57:42,948 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'KbAbp.Kbs.IKbCategoryAppService' with service name 'app/kbcategory'.
+DEBUG 2017-06-23 16:57:42,950 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'KbAbp.Kbs.IKbCategoryItemAppService' with service name 'app/kbcategoryitem'.
+DEBUG 2017-06-23 16:57:42,951 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'KbAbp.Kbs.IKbQueueAppService' with service name 'app/kbqueue'.
+DEBUG 2017-06-23 16:57:42,952 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'KbAbp.Kbs.IKnowledgeCategoryAppService' with service name 'app/knowledgecategory'.
+DEBUG 2017-06-23 16:57:42,954 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'KbAbp.Kbs.IKnowledgeAppService' with service name 'app/knowledge'.
+WARN  2017-06-23 16:57:47,434 [9    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-06-23 16:57:47,464 [9    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+INFO  2017-06-23 16:58:49,845 [8    ] KbAbp.Tasks.TaskAppService               - Updating a task for input: KbAbp.Tasks.Dtos.UpdateTaskInput
+INFO  2017-06-23 16:58:51,001 [8    ] KbAbp.Tasks.TaskAppService               - Updating a task for input: KbAbp.Tasks.Dtos.UpdateTaskInput
+INFO  2017-06-23 16:58:53,223 [13   ] KbAbp.Tasks.TaskAppService               - Updating a task for input: KbAbp.Tasks.Dtos.UpdateTaskInput
+INFO  2017-06-23 16:58:53,833 [14   ] KbAbp.Tasks.TaskAppService               - Updating a task for input: KbAbp.Tasks.Dtos.UpdateTaskInput
+INFO  2017-06-23 16:58:54,400 [18   ] KbAbp.Tasks.TaskAppService               - Updating a task for input: KbAbp.Tasks.Dtos.UpdateTaskInput
+INFO  2017-06-23 16:58:55,376 [6    ] KbAbp.Tasks.TaskAppService               - Updating a task for input: KbAbp.Tasks.Dtos.UpdateTaskInput
+INFO  2017-06-23 16:58:55,912 [8    ] KbAbp.Tasks.TaskAppService               - Updating a task for input: KbAbp.Tasks.Dtos.UpdateTaskInput
+INFO  2017-06-23 16:58:56,503 [15   ] KbAbp.Tasks.TaskAppService               - Updating a task for input: KbAbp.Tasks.Dtos.UpdateTaskInput
+WARN  2017-06-23 17:00:51,651 [33   ] Abp.Logging.LogHelper                    - Can not find 'List' in localization source 'KbAbp'!
+DEBUG 2017-06-23 17:01:57,993 [46   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-06-23 17:01:57,994 [46   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-06-23 17:17:39,995 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-06-23 17:17:42,403 [1    ] Abp.Modules.AbpModuleManager             - Found 12 ABP modules in total.
+DEBUG 2017-06-23 17:17:42,409 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-06-23 17:17:42,412 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-06-23 17:17:42,413 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-06-23 17:17:42,413 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-06-23 17:17:42,413 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-06-23 17:17:42,413 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-06-23 17:17:42,414 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-06-23 17:17:42,414 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: KbAbp.KbAbpApplicationModule, KbAbp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-06-23 17:17:42,414 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: KbAbp.KbAbpCoreModule, KbAbp.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-06-23 17:17:42,414 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: KbAbp.KbAbpDataModule, KbAbp.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-06-23 17:17:42,414 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: KbAbp.Web.KbAbpWebModule, KbAbp.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-06-23 17:17:42,415 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: KbAbp.KbAbpWebApiModule, KbAbp.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-06-23 17:17:42,422 [1    ] Abp.Modules.AbpModuleManager             - 12 modules loaded.
+DEBUG 2017-06-23 17:17:42,584 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: KbAbp.EntityFramework.KbAbpDbContext, KbAbp.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-06-23 17:17:43,338 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2017-06-23 17:17:43,347 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-06-23 17:17:43,348 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-06-23 17:17:43,351 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: KbAbp
+DEBUG 2017-06-23 17:17:43,607 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-06-23 17:17:43,757 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2017-06-23 17:17:43,787 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'KbAbp.Tasks.ITaskAppService' with service name 'app/task'.
+DEBUG 2017-06-23 17:17:43,788 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'KbAbp.Projects.IProjectAppService' with service name 'app/project'.
+DEBUG 2017-06-23 17:17:43,789 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'KbAbp.Kbs.IKbCategoryAppService' with service name 'app/kbcategory'.
+DEBUG 2017-06-23 17:17:43,791 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'KbAbp.Kbs.IKbCategoryItemAppService' with service name 'app/kbcategoryitem'.
+DEBUG 2017-06-23 17:17:43,792 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'KbAbp.Kbs.IKbQueueAppService' with service name 'app/kbqueue'.
+DEBUG 2017-06-23 17:17:43,793 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'KbAbp.Kbs.IKnowledgeCategoryAppService' with service name 'app/knowledgecategory'.
+DEBUG 2017-06-23 17:17:43,795 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'KbAbp.Kbs.IKnowledgeAppService' with service name 'app/knowledge'.
+WARN  2017-06-23 17:17:47,900 [7    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-06-23 17:17:47,932 [7    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
